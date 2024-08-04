@@ -1,0 +1,30 @@
+.About
+{
+    margin-top: 100px;
+}
+
+.header_section h1{
+    text-align: center;
+    color: var(--black_color);
+    line-height: 40px;
+    font-size: 45px;
+    margin-bottom: 50px;
+}
+
+.about_content{
+    max-width: 1100px;
+    padding: 20px;
+    margin: 0 auto;
+    background: var(--primary_color);
+    border-bottom-left-radius:30px ;
+    border-top-right-radius:30px ;
+}
+.about_content p{
+    font-size: 25px;
+    color: var(--secondary_color);
+    line-height: 40px;
+}
+.about_content .second_text{
+    margin-top: 40px;
+}
+

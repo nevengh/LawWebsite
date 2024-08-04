@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "teamName": "nieven ghasoun",
+        "info": "A skilled attorney specializing in criminal law.",
+        "image": "Hero.jpg"
+    },
+    {
+        "id": 2,
+        "teamName": "mona joud",
+        "info": "A skilled attorney specializing in criminal law.",
+        "image": "Hero.jpg"
+    },
+    {
+        "id": 3,
+        "teamName": "John Doe",
+        "info": "A skilled attorney specializing in criminal law.",
+       "image": "Hero.jpg"
+    }
+]

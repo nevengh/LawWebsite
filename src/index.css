@@ -1,0 +1,37 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    direction: rtl;
+}
+:root
+{
+    /* Color  */
+    --primary_color:#53301d;
+    --secondary_color:#dba855;
+    --white_color:#fff;
+    --Black_color:#000;
+
+
+    /* Font */
+}
+
+ul
+{
+    list-style: none;
+}
+a
+{
+    color: var(--white_color);
+    text-decoration: none;
+}
+
+.main_container
+{
+    max-width: 920px;
+    margin: 0 auto;
+}

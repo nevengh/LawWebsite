@@ -1,0 +1,66 @@
+.navbar {
+    padding: 15px 5px 15px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    transition: opacity 0.3s ease-in-out;
+}
+.menu a {
+    font-size: 22px;
+    color: var(--primary_color);
+    font-weight: 500;
+}
+
+/* Call Us Button */
+.call_us {
+    padding: 10px 20px;
+    background: var(--primary_color);
+}
+
+/* Mobile Menu Styles */
+.burger_menu {
+    display: none; /* Hide the burger menu by default */
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar{
+        justify-content: space-around;
+    }
+    .menu {
+        position: absolute;
+        top: 7%; /* Adjust as needed */
+        left: 0;
+        right: 0;
+        background: #53301d63; /* Background color for the dropdown */
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0; /* Add vertical padding */
+        gap: 10px; /* Space between links */
+        display: none; /* Hide the menu by default */
+    }
+
+    .menu.active {
+        display: flex; /* Show the menu when active */
+    }
+
+    .burger_menu {
+        display: block; /* Show the burger menu */
+    }
+
+    .menu a {
+        font-size: 18px; /* Smaller font size for mobile */
+    }
+    .call_us{
+        display: none;
+    }
+}
