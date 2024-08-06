@@ -30,7 +30,7 @@ function Header({ language, setLanguage }: HeaderProps) {
         <div className="logo">{translation[language].lawyer}</div>
         <div className={`menu ${isMobileMenuOpen ? 'active' : ''}`}>
           <Link to="/">{translation[language].home}</Link>
-          <Link to="/about">{translation[language].about}</Link>
+          <Link to="/about-page">{translation[language].about}</Link>
           <Link to="/services">{translation[language].services}</Link>
           <Link to="/team-work">{translation[language].team}</Link>
           <Link to="/contact">{translation[language].contact}</Link>

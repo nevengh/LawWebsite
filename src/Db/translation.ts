@@ -17,6 +17,7 @@ export interface TranslationStrings {
   our_team_mainhead: string;
   our_services_subhead: string;
   our_services_mainhead: string;
+  about_hero:string;
 }
 
 export type Translation = Record<Language, TranslationStrings>;
@@ -38,6 +39,7 @@ const translation: Translation = {
     our_team_mainhead: "Our Best Lawyers",
     our_services_subhead: "Our Services",
     our_services_mainhead: "Our Legal Services",
+    about_hero:"About",
   },
   ar: {
     home: "الرئيسية",
@@ -55,6 +57,7 @@ const translation: Translation = {
     our_team_mainhead: "أفضل محامينا",
     our_services_subhead: "خدماتنا",
     our_services_mainhead: "خدماتنا القانونية",
+    about_hero:"من نحن",
   }
 };
 

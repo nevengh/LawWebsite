@@ -1,0 +1,19 @@
+.Sections_Hero{
+    width: 100%;
+    height: 70vh;
+    border-bottom-left-radius:170px ;
+    background-image: url(../../assets/images/about_page.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.Sections_Hero::before{
+    content: '';
+    position: absolute;
+    border-bottom-left-radius:170px ;
+    width: 100%;
+    height: 100%;
+    background: #53301db7;
+}
