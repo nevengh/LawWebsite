@@ -1,0 +1,27 @@
+.team_heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 80px;
+}
+.subhead{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.right_line , .left_line
+{
+    width: 70px;
+    height: 2px;
+    background-color: #1b1b1b;
+}
+.subhead h5{
+    padding: 0 10px;
+}
+.main_title h1{
+    font-size: 45px;
+    
+}

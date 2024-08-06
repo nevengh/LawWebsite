@@ -29,6 +29,7 @@
     font-size: 40px;
     max-width: 600px;
     text-align: center;
+    /* line-height: 40px; */
 
 }
 .hero_text .contact_call
@@ -42,3 +43,10 @@
 }
 
 
+
+@media (max-width:520px){
+    .hero_text {
+        font-size: 25px !important;
+        
+      }
+}

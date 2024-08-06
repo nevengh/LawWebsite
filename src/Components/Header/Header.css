@@ -35,18 +35,23 @@
 @media (max-width: 768px) {
     .navbar{
         justify-content: space-around;
+        position: fixed;
+        z-index: 999;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.67);
     }
     .menu {
         position: absolute;
-        top: 7%; /* Adjust as needed */
+        top: 100%; /* Adjust as needed */
         left: 0;
         right: 0;
-        background: #53301d63; /* Background color for the dropdown */
+        background: rgba(255, 255, 255, 0.67); /* Background color for the dropdown */
         flex-direction: column;
         align-items: center;
         padding: 15px 0; /* Add vertical padding */
         gap: 10px; /* Space between links */
         display: none; /* Hide the menu by default */
+        color: white;
     }
 
     .menu.active {

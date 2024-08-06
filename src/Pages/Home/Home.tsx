@@ -10,6 +10,7 @@ import TeamInfo from '../../Db/TeamInfo.json';
 import firstUser from '../../assets/images/Hero.jpg';
 import secondUser from '../../assets/images/wesley-tingey-9z9fxr_7Z-k-unsplash.jpg';
 import thirdUser from '../../assets/images/Hero.jpg';
+import SectionHeading from '../../Components/SectionHeading/SectionHeading';
 
 function Home() {
   const navigate = useNavigate();
@@ -29,7 +30,11 @@ function Home() {
     <div>
       <Hero />
       <About />
-      {/* Legal Advice Section */}
+      {/*
+      ======================
+      Legal Advice Section
+      ======================
+      */}
       <motion.div 
         className='legal_advice'
         initial={{ opacity: 0, y: 50 }} 
@@ -46,18 +51,14 @@ function Home() {
           </div>
         </div>
       </motion.div>
-      {/* Our Team section */}
+      {
+      /*
+      =========================
+       Our Team section
+       =========================
+       */}
       <div className="team_section">
-        <div className="team_heading">
-          <div className="subhead">
-            <div className="right_line"></div>
-            <h5>فريقنا</h5>
-            <div className="left_line"></div>
-          </div>
-          <div className="main_title">
-            <h1>أفضل المحامين لدينا</h1>
-          </div>
-        </div>
+        <SectionHeading subhead="فريقنا" mainhead='افضل محامينا' />
         <div className="team_card_container main_container">
           {TeamInfo.map((team) => (
             <motion.div 
@@ -76,6 +77,15 @@ function Home() {
           ))}
         </div>
       </div>
+      {
+      /*
+      =========================
+       Our Services
+       =========================
+       */}
+       <div className="services_section">
+          <SectionHeading subhead='خدماتنا' mainhead='خدماتنا القانونية' />
+       </div>
     </div>
   );
 }
