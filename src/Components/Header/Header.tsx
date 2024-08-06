@@ -1,37 +1,55 @@
+// src/Components/Header/Header.tsx
 import { Link } from "react-router-dom";
 import TopBanner from "../TopBanner/TopBanner";
 import "./Header.css";
 import { FaBars, FaTimes } from "react-icons/fa";
+
+import translation, { Language, Translation } from '../../Db/translation';
 import { useState } from "react";
 
-function Header() {
-    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-    
-    const toggleMobileMenu = () => {
-        setIsMobileMenuOpen(!isMobileMenuOpen);
-    };
+interface HeaderProps {
+  language: Language;
+  setLanguage: (lang: Language) => void;
+}
 
-    return (
-        <div className="Header">
-            <TopBanner />
-            <div className="navbar main_container">
-                <div className="logo">المحامي</div>
-                <div className={`menu ${isMobileMenuOpen ? 'active' : ''}`}>
-                    <Link to="/">الرئيسية</Link>
-                    <Link to="/">من نحن</Link>
-                    <Link to="/">الخدمات</Link>
-                    <Link to="/">فريقنا</Link>
-                    <Link to="/">اتصل بنا</Link>
-                </div>
-                <div className="call_us">
-                    <Link to=''>اتصل بنا</Link>
-                </div>
-                <div className="burger_menu" onClick={toggleMobileMenu}>
-                    {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
-                </div>
-            </div>
+function Header({ language, setLanguage }: HeaderProps) {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+ 
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    setLanguage(e.target.value as Language);
+  };
+
+  return (
+    <div className="Header">
+      <TopBanner />
+      <div className="navbar main_container">
+        <div className="logo">{translation[language].lawyer}</div>
+        <div className={`menu ${isMobileMenuOpen ? 'active' : ''}`}>
+          <Link to="/">{translation[language].home}</Link>
+          <Link to="/about">{translation[language].about}</Link>
+          <Link to="/services">{translation[language].services}</Link>
+          <Link to="/team-work">{translation[language].team}</Link>
+          <Link to="/contact">{translation[language].contact}</Link>
+        <div className="language_btn">
+          <select value={language} onChange={handleLanguageChange}>
+            <option value="en">en</option>
+            <option value="ar">ar</option>
+          </select>
         </div>
-    );
+        </div>
+        <div className="call_us">
+          <Link to="/contact">{translation[language].contact}</Link>
+        </div>
+        <div className="burger_menu" onClick={toggleMobileMenu}>
+          {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default Header;

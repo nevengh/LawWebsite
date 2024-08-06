@@ -5,7 +5,8 @@ interface TeamCardProps {
   img: string;      // URL of the image
   teamName: string; // Name of the team member
   info: string;  
-  onClick: () => void;   // Additional information about the team member
+  onClick: () => void; 
+    // Additional information about the team member
 }
 
 const TeamCard: React.FC<TeamCardProps> = ({ img, teamName, info,onClick }) => {
