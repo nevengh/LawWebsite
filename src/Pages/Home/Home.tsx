@@ -63,7 +63,11 @@ const Home: React.FC<HomeProps> = ({ language }) => {
        =========================
        */}
       <div className="team_section">
-        <SectionHeading subhead="فريقنا" mainhead='افضل محامينا' language={language} />
+      <SectionHeading 
+  subhead="our_team_subhead"
+  mainhead="our_team_mainhead"
+  language={language}
+/>
         <div className="team_card_container main_container">
           {TeamInfo.map((team) => (
             <motion.div 
@@ -89,7 +93,11 @@ const Home: React.FC<HomeProps> = ({ language }) => {
        =========================
        */}
        <div className="services_section">
-          <SectionHeading subhead='خدماتنا' mainhead='خدماتنا القانونية' language={language} />
+       <SectionHeading 
+  subhead="our_services_subhead"
+  mainhead="our_services_mainhead"
+  language={language}
+/>
        </div>
     </div>
   );
