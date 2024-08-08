@@ -33,6 +33,11 @@ export interface TranslationStrings {
   capicity_title:string
   capicity_text:string
   read_more:string
+  why_choose_subhead:string
+  why_choose_mainhead:string
+  why_choose_text_3:string
+  why_choose_text_2:string
+  why_choose_text_1:string
 }
 
 export type Translation = Record<Language, TranslationStrings>;
@@ -46,9 +51,14 @@ const translation: Translation = {
     contact: "Contact Us",
     lawyer: "Lawyer",
     read_more:"Read more",
+    why_choose_subhead:"More about us",
+    why_choose_mainhead:"Why you choose us",
     hero_title: "Lawyers and Legal Consultants",
     contact_call: "Contact Us",
     about_title: "About Us",
+    why_choose_text_3:"We take the role of the client and act on their behalf at the appropriate time to achieve the best results for them",
+    why_choose_text_2:"The members of the Al-Kassadi’s law firm,are distinguished by integrity, diligence,Hardworking, able to assess legal situations, and effective service delivery, which is associated with our competence in finding solutions to any difficulties",
+    why_choose_text_1:"Our team has been carefully selected in pursuit of finding the best legal solutions for our clients. Our team is professional, loyal, listener, creative and productive",
     about_content_1: "Our practical history testifies to our continued success in criminal justice and recovery cases. We also have a rich history in commercial cases, civil disputes, personal status cases, and labor cases. We have a distinctive style in understanding and studying all our clients' files, radically different from all traditional methods. We read, understand, comprehend, and innovate to find the best solutions that suit our clients' interests.",
     about_content_2: "Our practical history testifies to our continued success in criminal justice and recovery cases. We also have a rich history in commercial cases, civil disputes, personal status cases, and labor cases. We have a distinctive style in understanding and studying all our clients' files, radically different from all traditional methods. We read, understand, comprehend, and innovate to find the best solutions that suit our clients' interests.",
     our_team_subhead: "Our Team",
@@ -82,6 +92,9 @@ const translation: Translation = {
     hero_title: "محامون واستشياريون قانونيون",
     contact_call: "اتصل بنا",
     about_title: "من نحن",
+    why_choose_text_3:"ﻧﺄﺧﺬ دور اﻟﻌﻤﻴﻞ و ﻧﺘﺼﺮف ﺑﺎﻟﻮﻛﺎﻟﺔ ﻋﻨﻪ ﻓﻲ اﻟﻮﻗﺖ اﻟﻤﻨﺎﺳﺐ ﻟﺘﺤﻘﻴﻖ اﻓﻀﻞ واﺣﺴﻦ اﻟﻨﺘﺎﺋﺞ ﻟﻪ.",
+    why_choose_text_2:"ﻳﺘﻤﻴﺰ أﻓﺮاد ﻣﺆﺳﺴﺔ اﻟﻜﺴﺎدي ﺑﺎﻟﻨﺰاﻫﺔ واﻟﺤﺮص واﻟﻌﻤﻞ اﻟﺠﺎد واﻟﻘﺪرة ﻋﻠﻰ ﺗﻘﻴﻴﻢ اﻷوﺿﺎع اﻟﻘﺎﻧﻮﻧﻴﺔ وﺗﻘﺪﻳﻢ اﻟﺨﺪﻣﺎت ﺑﻔﺎﻋﻠﻴﺔ ، واﻟﺘﻲ ﺗﻘﺘﺮن ﺑﻜﻔﺎءﺗﻨﺎ ﻓﻲ إﻳﺠﺎد اﻟﺤﻠﻮل ﻷي ﺻﻌﻮﺑﺎت.",
+    why_choose_text_1:"ﻛﻮﻧﻨﺎ ﻓﺮﻳﻖ ﻣﺨﺘﺎر ﺑﻌﻨﺎﻳﺔ ﻣﻦ اﻟﻘﺎﻧﻮﻧﻴﻴﻦ اﻟﻤﺘﻤﺮﺳﻴﻦ ﻣﻦ ﺟﻨﺴﻴﺎت ﻣﺨﺘﻠﻔﺔ ﻧﺴﻌﻰ ﺟﺎﻫﺪﻳﻦ ﻟﺘﻮﻓﻴﺮ أﻓﻀﻞ ﻣﺴﺘﻮى ﻣﻦ اﻟﺨﺪﻣﺔ ﺑﻘﺪرة وﻛﻔﺎءة ﻋﺎﻟﻴﺔ.",
     about_content_1: "تاريخنا العملي يشهد لنا بالنجاح المستمر في القضاء الجنائي وقضايا الاسترداد. كما أنه لنا تاريخ زاخر في القضايا التجارية والنزاعات المدنية وقضايا الأحوال الشخصية والقضايا العمالية, ولنا أسلوب متميز في فهم ودراسة كافة ملفات عملائنا نختلف جذريا عن كافة الأساليب التقليدية.نقرأ,نفهم وندرك ونبدع لإيجاد الحلول الأفضل التي تتلائم مع صملحة عملائنا.",
     about_content_2: "تاريخنا العملي يشهد لنا بالنجاح المستمر في القضاء الجنائي وقضايا الاسترداد. كما أنه لنا تاريخ زاخر في القضايا التجارية والنزاعات المدنية وقضايا الأحوال الشخصية والقضايا العمالية, ولنا أسلوب متميز في فهم ودراسة كافة ملفات عملائنا نختلف جذريا عن كافة الأساليب التقليدية.نقرأ,نفهم وندرك ونبدع لإيجاد الحلول الأفضل التي تتلائم مع صملحة عملائنا.",
     our_team_subhead: "فريقنا",
@@ -89,6 +102,8 @@ const translation: Translation = {
     our_services_subhead: "خدماتنا",
     our_services_mainhead: "خدماتنا القانونية",
     about_hero:"من نحن",
+    why_choose_subhead:"المزيد حولنا",
+    why_choose_mainhead:"لماذا تختارنا",
     important_advice_title:"النصيحة الهامة",
     capicity_title:"القدؤة والمصداقية",
     capicity_text:"نحن بالفعل وضعنا أسس ثابتة لإثبات قدراتنا ومصداقياتنا ونحن نتحمل مسؤولية أفعالنا.",

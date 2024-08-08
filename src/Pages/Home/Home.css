@@ -57,3 +57,13 @@
 
 
 /* End Team Section */
+
+/* Why Choose Us section */
+.why_choose_us{
+    margin-top: 105px;
+}
+.why_choose_us .our_work_card{
+    width: 300px;
+    height: auto;
+    
+}

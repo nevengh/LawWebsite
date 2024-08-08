@@ -18,7 +18,7 @@ const App: React.FC = () => {
 
   return (
     <div className={`app ${direction}`}>
-      <BrowserRouter>
+      <BrowserRouter basename='/LawWebsite/'>
         <Header language={language} setLanguage={setLanguage} />
         <Routes>
           <Route path="/" element={<Home language={language} />} />
