@@ -4,7 +4,7 @@ import TopBanner from "../TopBanner/TopBanner";
 import "./Header.css";
 import { FaBars, FaTimes } from "react-icons/fa";
 import logo from '../../assets/images/Al Kassadi.png'
-import translation, { Language, Translation } from '../../Db/translation';
+import translation, { Language } from '../../Db/translation';
 import { useState } from "react";
 
 interface HeaderProps {

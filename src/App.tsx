@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Header from './Components/Header/Header';
 import Home from './Pages/Home/Home';
-import OurTeam from './Pages/OurTeam/OurTeam';
+// import OurTeam from './Pages/OurTeam/OurTeam';
 import { Language } from './Db/translation';
 import AboutPage from './Pages/AboutPage/AboutPage';
 
@@ -22,7 +22,7 @@ const App: React.FC = () => {
         <Header language={language} setLanguage={setLanguage} />
         <Routes>
           <Route path="/" element={<Home language={language} />} />
-          <Route path="/team-work" element={<OurTeam language={language} />} />
+          {/* <Route path="/team-work" element={<OurTeam language={language} />} /> */}
           <Route path="/about-page" element={<AboutPage language={language} />} />
         </Routes>
       </BrowserRouter>

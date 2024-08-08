@@ -125,7 +125,7 @@ const Home: React.FC<HomeProps> = ({ language }) => {
                 teamName={team.teamName}
                 info={team.info}
                 onClick={() => handleTeamCardClick(team)}
-                language={language}
+                // language={language}
               />
             </motion.div>
           ))}
