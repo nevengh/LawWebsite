@@ -15,5 +15,161 @@
     border-bottom-left-radius:170px ;
     width: 100%;
     height: 100%;
-    background: #53301db7;
+    background: #3c5a75bf;
+}
+
+.about_paragrap{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+.about_paragrap img {
+    width: 600px;
+    height: 400px; /* Adjust height for the ellipse effect */
+    clip-path: ellipse(50% 70% at 50% 50%); /* Clip to an ellipse */
+}
+
+.text_about h1{
+    color: var(--secondary_color);
+    font-size: 45px;
+    /* text-decoration: underline; */
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    width: max-content;
+    border-bottom: 5px solid var(--secondary_color);
+
+}
+.text_about p{
+    font-size: 22px;
+    line-height: 30px;
+    color: var(--primary_color);
+    max-width: 500px;
+    font-weight: 600;
+}
+
+.about_services_section,.our_partner{
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.about_services_section img,.our_partner img{
+    height: 400px;
+    
+}
+.about_services_text{
+    border-top-right-radius:70px ;
+    padding: 50px 10px;
+    background: #b0976fad;
+    position: absolute;
+    z-index: 5;
+    right: 10%;
+}
+.our_partner_text{
+    padding: 50px 10px;
+    background: #b0976fad;
+    position: absolute;
+    z-index: 5;
+    left: 10%;
+    border-top-left-radius:70px ;
+}
+.about_services_text h1,.our_partner h1{
+    font-size: 35px;
+    color: var(--primary_color);
+    /* text-decoration: underline; */
+    padding-bottom: 5px;
+    border-bottom: 5px solid var(--primary_color);
+    width: 280px;
+    margin-bottom: 10px;
+}
+.about_services_text p,.our_partner p{
+    max-width: 600px;
+    font-size: 20px;
+    color: var(--primary_color);
+    line-height: 40px;
+    font-weight: 600;
+}
+
+.our_work{
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.our_work h1{
+    font-size: 40px;
+    color: var(--primary_color);
+    padding-bottom: 5px;
+    border-bottom: 5px solid var(--primary_color);
+    width: 300px;
+    text-align: center;
+}
+.our_work_con{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.our_work_card {
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    background: #b0976fad;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 8px;
+}
+
+.our_work_card h2{
+    color:var(--primary_color);
+    border-bottom: 5px solid var(--primary_color);
+    padding-bottom: 3px;
+    width: max-content;
+    margin-bottom: 15px;
+}
+.our_work_card p{
+    color: var(--primary_color);
+    font-size: 18px;
+}
+
+
+
+
+@media(max-width:767px){
+    .about_services_section img,.our_partner img{
+        width: 80% !important;
+    }
+    .about_services_text h1,.our_partner_text h1{
+        text-align: center;
+    }
+    .about_services_text p,.our_partner_text p{
+       width: 80% !important;
+       text-align: center;
+       font-size: 16px;
+       line-height: 30px;
+       margin: 0 auto;
+    }
+    .about_services_text,.our_partner_text{
+        border-top-right-radius:0 ;
+        border-top-left-radius:0 ;
+        height: 100%;
+        
+        padding: 30px 20px;
+        max-width: 400px !important;
+        background: #b0976fad;
+        /* position: absolute;
+        z-index: 5; */
+        /* right: 10%; */
+    }
+    .about_paragrap img{
+        width: 400px;
+    }
 }

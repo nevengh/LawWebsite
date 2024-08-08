@@ -1,4 +1,3 @@
-// src/App.tsx
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
@@ -13,8 +12,9 @@ const App: React.FC = () => {
   const direction = language === 'ar' ? 'rtl' : 'ltr';
 
   useEffect(() => {
-    document.body.dir = direction;
-  }, [direction]);
+    document.body.dir = direction; // Set the direction of the body
+    document.body.className = language === 'en' ? 'en' : 'ar'; // Set class for language
+  }, [direction, language]);
 
   return (
     <div className={`app ${direction}`}>
@@ -23,7 +23,7 @@ const App: React.FC = () => {
         <Routes>
           <Route path="/" element={<Home language={language} />} />
           <Route path="/team-work" element={<OurTeam language={language} />} />
-          <Route path='about-page' element={<AboutPage language={language}   />} />
+          <Route path="/about-page" element={<AboutPage language={language} />} />
         </Routes>
       </BrowserRouter>
     </div>

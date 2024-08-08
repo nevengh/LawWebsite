@@ -5,10 +5,14 @@
 
 .header_section h1{
     text-align: center;
-    color: var(--black_color);
+    color: var(--primary_color);
     line-height: 40px;
     font-size: 45px;
     margin-bottom: 50px;
+    padding-bottom: 5px;
+    border-bottom: 5px solid var(--primary_color);
+    width: max-content;
+    margin: 40px auto;
 }
 
 .about_content{
@@ -20,11 +24,18 @@
     border-top-right-radius:30px ;
 }
 .about_content p{
-    font-size: 25px;
+    font-size: 20px;
     color: var(--secondary_color);
     line-height: 40px;
 }
 .about_content .second_text{
     margin-top: 40px;
+}
+.second_text a{
+    transition: .3s;
+    text-decoration: underline;
+}
+.second_text a:hover{
+    color: var(--secondary_color);
 }
 

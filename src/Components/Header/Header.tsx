@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import TopBanner from "../TopBanner/TopBanner";
 import "./Header.css";
 import { FaBars, FaTimes } from "react-icons/fa";
-
+import logo from '../../assets/images/Al Kassadi.png'
 import translation, { Language, Translation } from '../../Db/translation';
 import { useState } from "react";
 
@@ -26,8 +26,8 @@ function Header({ language, setLanguage }: HeaderProps) {
   return (
     <div className="Header">
       <TopBanner />
-      <div className="navbar main_container">
-        <div className="logo">{translation[language].lawyer}</div>
+      <div className="navbar ">
+        <div className="logo"><img src={logo} alt="Al Kassadi Logo" /></div>
         <div className={`menu ${isMobileMenuOpen ? 'active' : ''}`}>
           <Link to="/">{translation[language].home}</Link>
           <Link to="/about-page">{translation[language].about}</Link>
