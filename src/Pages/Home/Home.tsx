@@ -10,9 +10,9 @@ import SectionHeading from "../../Components/SectionHeading/SectionHeading";
 import translation, { Language } from "../../Db/translation";
 
 // Import images
-import firstUser from "../../assets/images/Hero.jpg";
-import secondUser from "../../assets/images/wesley-tingey-9z9fxr_7Z-k-unsplash.jpg";
-import thirdUser from "../../assets/images/Hero.jpg";
+import firstUser from "../../assets/images/Hero.webp";
+import secondUser from "../../assets/images/wesley-tingey-9z9fxr_7Z-k-unsplash.webp";
+import thirdUser from "../../assets/images/Hero.webp";
 
 interface HomeProps {
   language: Language;

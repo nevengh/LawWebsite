@@ -2,9 +2,9 @@ import './AboutPage.css';
 import { motion } from 'framer-motion';
 import translation, { Language } from '../../Db/translation';
 import { Link } from 'react-router-dom';
-import about_img from '../../assets/images/about_img.jpg';
-import about_services from '../../assets/images/about_services.jpg';
-import our_partner from '../../assets/images/our_partners.jpg';
+import about_img from '../../assets/images/about_img.webp';
+import about_services from '../../assets/images/about_services.webp';
+import our_partner from '../../assets/images/our_partners.webp';
 
 interface AboutPageProps {
   language: Language;
