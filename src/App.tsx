@@ -7,6 +7,7 @@ import Home from './Pages/Home/Home';
 import { Language } from './Db/translation';
 import AboutPage from './Pages/AboutPage/AboutPage';
 import OurTeam from './Pages/OurTeam/OurTeam';
+import ContactUS from './Pages/ContactUS/ContactUS';
 
 const App: React.FC = () => {
   const [language, setLanguage] = useState<Language>('ar');
@@ -26,6 +27,7 @@ const App: React.FC = () => {
           {/* <Route path="/team-work" element={<OurTeam language={language} />} /> */}
           <Route path="/about-page" element={<AboutPage language={language} />} />
           <Route path='/all-team' element={<OurTeam language={language}/>}/>
+          <Route path='/conatct-us' element={<ContactUS language={language}/>} />
         </Routes>
       </BrowserRouter>
     </div>

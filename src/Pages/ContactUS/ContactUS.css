@@ -1,0 +1,141 @@
+
+.contact_us_form{
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .contact_us_form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    width: 60%;
+    background: linear-gradient(#212121, #212121) padding-box,
+              linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
+  border: 2px solid transparent;
+  padding: 32px 24px;
+
+}
+.contact_us_form form .input-group  {
+display: flex;
+flex-direction: column;
+gap: 20px;
+
+}
+.contact_us_form form input,textarea{
+    padding: 1rem;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid var(--primary_color);
+    width: 80%;
+   margin: 0 auto;
+} */
+
+/* From Uiverse.io by gharsh11032000 */ 
+.form-container {
+    width:60%;
+    margin: 105px auto;
+    background: linear-gradient(#223343, #3f5c78) padding-box,
+                linear-gradient(145deg, transparent 35%,#b0976f, #0f1b26) border-box;
+    border: 2px solid transparent;
+    padding: 32px 24px;
+    font-size: 14px;
+    font-family: inherit;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+    border-radius: 16px;
+  }
+  
+  .form-container button:active {
+    scale: 0.95;
+  }
+  
+  .form-container .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-container .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  
+  .form-container .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #a7a1a1;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  
+  .form-container .form-group input {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    color: #fff;
+    font-family: inherit;
+    background-color: transparent;
+    border: 2px solid #375067;
+    font-size: 16px;
+  }
+  
+  .form-container .form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    resize: none;
+    color: #fff;
+    height: 96px;
+    background-color: transparent;
+    border: 2px solid #375067;
+    font-family: inherit;
+  }
+  
+  .form-container .form-group input::placeholder {
+    opacity: 0.5;
+  }
+  
+  .form-container .form-group input:focus {
+    outline: none;
+    border-color: #b0976f;
+  }
+  
+  .form-container .form-group textarea:focus {
+    outline: none;
+    border-color: #b0976f;
+  }
+  
+  .form-container .form-submit-btn {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    align-self: flex-start;
+    font-family: inherit;
+    color: #bebaba;
+    font-weight: 600;
+    width: 30%;
+    background: #0f1b26;
+    border: 1px solid #0e1c29;
+    padding: 12px 16px;
+    font-size: inherit;
+    gap: 8px;
+    margin: 8px auto;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: .5s;
+  }
+  
+  .form-container .form-submit-btn:hover {
+    background-color: #0f1b26;
+    border-color: #fff;
+  }
+  
+  
+  
+  
