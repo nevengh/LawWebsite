@@ -55,12 +55,31 @@ export interface TranslationStrings {
   team_3_phone:string
   team_2_phone:string
   team_1_phone:string
+  our_value_mainhead:string
+  value_excelence_text_1:string
+  value_excelence_title_1:string
+  value_Honesty_text:string
+  value_Honesty_title:string
+  value_transparency_title:string
+  value_transparency_text:string
+  justic_text:string
+  justic_title:string
+
 }
 
 export type Translation = Record<Language, TranslationStrings>;
 
 const translation: Translation = {
   en: {
+    justic_title:"Justice",
+    justic_text:"Achieving justice represents the top of our commitment and the priorities of our work because of our confidence that achieving and preserving justice leads to the establishment of a society in which there is tranquility, security and peace to achieve the desired progress.",
+    value_Honesty_title:"Honesty and integrity",
+    value_Honesty_text:"We believe that communications with transparency are the basis of success in any professional relationship",
+    value_transparency_title:"Transparency",
+    value_transparency_text:"We believe that honest and transparent communication is the foundation for success in any professional relationship.",
+    value_excelence_title_1:"Excellence",
+    value_excelence_text_1:"We always strive to achieve impressive results with high quality and skill for all our clients.",
+    our_value_mainhead:"Our Values",
     Our_team_Head_text_1:"Whatever the size of your business",
     Our_team_Head_text_2:"Or the pressures you are exposed to",
     Our_team_Head_text_3:"We have the experience and skill to provide you with a strategic partnership through which we bear all the burdens of work from a technical standpoint (preparing memoranda, lawsuits and appeals before all courts at all levels) so that you can devote yourself to developing a network of relationships and serving your clients to reach unprecedented levels of development and growth.",
@@ -115,6 +134,15 @@ const translation: Translation = {
     text_about:"We are Qamar Al Kassadi Advocates & Legal Consultations,one of the senior law firms in the country.We are registered in all state courts and at all levels.We firmly believe that the interest of our clients is our priority in work and we always strive to achieve the best results.Our practicl history testifies to our skill and competence in various branches of law.Our team has been carefully selected in order to find the best legal solutions for our clients,we have a professional team that is loyal,sympathetic,listener,creative and productive."
   },
   ar: {
+    justic_text:"ﺗﺤﻘﻴﻖ اﻟﻌﺪاﻟﺔ ﻳﻤﺜﻞ ﻗﻤﺔ اﻟﺘﺰاﻣﻨﺎ و أوﻟﻮﻳﺎت ﻋﻤﻠﻨﺎ ﻟﺜﻘﺘﻨﺎ اﻟﺮاﺳﺨﺔ ﺑﺄن ﺗﺤﻘﻴﻖ اﻟﻌﺪاﻟﺔ واﻟﺤﻔﺎظ ﻋﻠﻴﻬﺎ ﻳﺆدي اﻟﻰ ﺗﺄﺳﻴﺲ ﻣﺠﺘﻤﻊ ﺗﺴﻮد ﻓﻴﻪ اﻟﻄﻤﺄﻧﻴﻨﺔ وﻳﻨﻌﻢ ﻓﻴﻪ اﻷﻣﻦ واﻟﺴﻼم ﻟﺘﺤﻘﻴﻖ اﻟﺘﻘﺪم اﻟﻤﻨﺸﻮد.",
+    justic_title:"العدالة",
+    value_transparency_title:"الشفافية",
+    value_transparency_text:"نؤمن بأن التواصل بنزاهة وشفافية هم أساس النجاح في أي علاقة مهنية",
+    value_Honesty_title:"الصدق والنزاهة",
+    value_Honesty_text:"ﻧﻌﻤﻞ ﻋﻠﻰ ﺗﻌﺰﻳﺰ ﻗﻴﻢ اﻟﺼﺪق واﻟﻨﺰاﻫﺔ واﻟﺜﻘﺔ ﻓﻲ ﻣﻜﺘﺐ ﻗﻤﺮ اﻟﻜﺴﺎدي ﻟﻠﻤﺤﺎﻣﺎة واﻻﺳﺘﺸﺎرات اﻟﻘﺎﻧﻮﻧﻴﺔ وﻧﺆﻣﻦ اﻳﻤﺎﻧًﺎ راﺳﺨًﺎ ﺑﺄﻫﻤﻴﺔ اﻟﺼﺪق واﻟﺜﻘﺔ واﻹﺣﺘﺮام اﻟﻤﺘﺒﺎدل. ﻛﻤﺎ ﻧﺪرك أﻫﻤﻴﺔ وﺿﺮورة أن ﻳﺸﻌﺮ ﻋﻤﻼﺋﻨﺎ ﺑﺎﻟﺜﻘﺔ وﻟﻬﺬا اﻟﺴﺒﺐ ﻓﺈﻧﻨﺎ ﻧﻀﻊ ﻋﻠﻰ ﻋﺎﺗﻘﻨﺎ ﺗﺤﻤﻞ اﻟﻤﺴﺆوﻟﻴﺔ اﻟﻜﺎﻣﻠﺔ ﻟﺒﻨﺎء اﻟﺜﻘﺔ اﻟﻤﻨﺸﻮدة ﻣﻊ ﻋﻤﻼﺋﻨﺎ واﻟﺤﻔﺎظ ﻋﻠﻴﻬﺎ.",
+    value_excelence_title_1:"التميز",
+    value_excelence_text_1:"ﻧﺴﻌﻰ دوﻣًﺎ ﻟﺘﺤﻘﻴﻖ ﻧﺘﺎﺋﺞ ﻣﺒﻬﺮة ﺑﺠﻮدة وﻣﻬﺎرة ﻋﺎﻟﻴﺔ ﻟﺠﻤﻴﻊ ﻋﻤﻼﺋﻨﺎ.",
+    our_value_mainhead:"قيمنا",
     Our_team_Head_text_1:"أيا كان حجم أعمالك",
     Our_team_Head_text_2:"أو الضغوط التي تتعرض لها",
     Our_team_Head_text_3:"لدينا الخبرة والمهارة لنقدم لك شراكة استؤاتيجية نتحمل من خلالها كافة أعباء العمل من الناحية الفنية(إعداد المذكرات وصحف الدعاوى والطعون أمام جميع المحاكم بكافة درجاتها) حتى تتفرغ لتنمية شبكة علاقات وخدمة عملائك للوصول الى مستويات غير مسبوقة من التطور والنمو.",

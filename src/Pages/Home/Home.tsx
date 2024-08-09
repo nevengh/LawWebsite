@@ -6,7 +6,10 @@ import About from "../About/About";
 import { Link } from "react-router-dom";
 import TeamCard from "../../Components/TeamCard/TeamCard";
 import SectionHeading from "../../Components/SectionHeading/SectionHeading";
-import translation, { Language, TranslationStrings } from "../../Db/translation";
+import translation, {
+  Language,
+  TranslationStrings,
+} from "../../Db/translation";
 
 // Import images
 import firstUser from "../../assets/images/Ahmad.webp";
@@ -18,14 +21,11 @@ interface HomeProps {
 }
 
 const Home: React.FC<HomeProps> = ({ language }) => {
-
   const imageMap: { [key: string]: string } = {
     "Ahmad.jpg": firstUser,
     "Mosa.jpg": secondUser,
     "Qamar.jpg": thirdUser,
   };
-
-  
 
   return (
     <div>
@@ -63,41 +63,91 @@ const Home: React.FC<HomeProps> = ({ language }) => {
           mainhead="why_choose_mainhead"
           language={language}
         />
-        <div className="our_work_con">
-          {[
+        <div className="our_value_con">
+    {[
             {
-              
               text: translation[language].why_choose_text_1,
             },
             {
-              
               text: translation[language].why_choose_text_2,
             },
             {
-              
               text: translation[language].why_choose_text_3,
             },
-            
           ].map((work, index) => (
-            <motion.div
-              key={index}
-              className="our_work_card"
-              initial={{ opacity: 0, y: 20 }} // Start with opacity 0 and translate down
-              whileInView={{ opacity: 1, y: 0 }} // Fade in and translate to original position
-              transition={{ duration: 0.5, delay: index * 0.2 }} // Stagger the animation
-            >
-              <p>{work.text}</p>
-            </motion.div>
-          ))}
+      <motion.div
+        key={index}
+        className="bgblue"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, delay: index * 0.2 }}
+      >
+        <div className="our_value_card">
+          {/* <h1>{value.title}</h1> */}
+          <p>{work.text}</p>
         </div>
+      </motion.div>
+    ))}
+  </div>
       </div>
+
+      
+
+      {/*
+      =========================
+       Our Values
+       =========================
+       */}
+      <div className="our_values">
+  <SectionHeading
+    subhead="why_choose_subhead"
+    mainhead="our_value_mainhead"
+    language={language}
+  />
+  <div className="our_value_con">
+    {[
+      {
+        title: translation[language].value_excelence_title_1,
+        text: translation[language].value_excelence_text_1,
+      },
+      {
+        title: translation[language].value_transparency_title,
+        text: translation[language].value_transparency_text,
+      },
+      {
+        title: translation[language].value_Honesty_title,
+        text: translation[language].value_Honesty_text,
+      },
+      {
+        title: translation[language].justic_title,
+        text: translation[language].justic_text,
+      },
+    ].map((value, index) => (
+      <motion.div
+        key={index}
+        className="bgblue"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, delay: index * 0.2 }}
+      >
+        <div className="our_value_card">
+          <h1>{value.title}</h1>
+          <p>{value.text}</p>
+        </div>
+      </motion.div>
+    ))}
+  </div>
+</div>
+
       {/*
       =========================
        Our Team section
        =========================
        */}
       <div className="team_section">
-      <SectionHeading
+        <SectionHeading
           subhead="our_team_subhead"
           mainhead="our_team_mainhead"
           language={language}
@@ -106,24 +156,24 @@ const Home: React.FC<HomeProps> = ({ language }) => {
           {[
             {
               id: 1,
-              teamName: 'team_1_name', // These should be keys in the translation file
-              info: 'team_1_info',
-              image: 'Ahmad.jpg',
-              phone:'team_1_phone',
+              teamName: "team_1_name", // These should be keys in the translation file
+              info: "team_1_info",
+              image: "Ahmad.jpg",
+              phone: "team_1_phone",
             },
             {
               id: 2,
-              teamName: 'team_2_name',
-              info: 'team_2_info',
-              image: 'Mosa.jpg',
-              phone:'team_2_phone',
+              teamName: "team_2_name",
+              info: "team_2_info",
+              image: "Mosa.jpg",
+              phone: "team_2_phone",
             },
             {
               id: 3,
-              teamName: 'team_3_name',
-              info: 'team_3_info',
-              image: 'Qamar.jpg',
-              phone:'team_3_phone',
+              teamName: "team_3_name",
+              info: "team_3_info",
+              image: "Qamar.jpg",
+              phone: "team_3_phone",
             },
           ].map((team) => (
             <motion.div
@@ -142,7 +192,9 @@ const Home: React.FC<HomeProps> = ({ language }) => {
             </motion.div>
           ))}
         </div>
-          <Link to='all-team' className="show_all">عرض الكل </Link>
+        <Link to="all-team" className="show_all">
+          عرض الكل{" "}
+        </Link>
       </div>
       {/*
       =========================

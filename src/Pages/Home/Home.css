@@ -74,6 +74,43 @@
     
 }
 
+/* OUR VALUES Section */
+
+.our_values{
+    margin-top: 105px;
+}
+.our_value_con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+/* From Uiverse.io by Spacious74 */ 
+.bgblue {
+    background: linear-gradient(135deg, #fffffff5, #3a4b8a, #ffffff98);
+    padding: 1px;
+    border-radius: 1.2rem;
+    box-shadow: 0px 1rem 1.5rem -0.9rem #000000e1;
+    max-width: 300px;
+  }
+  
+  .our_value_card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 1rem;
+    color: #d9e0ec;
+    background: linear-gradient(135deg, #0d1120 0%, #3c5a75d2 43%, #0d11207a 100%);
+    padding: 1.5rem;
+    border-radius: 1.2rem;
+    width: 300px;
+    height: 250px;
+  }
+  .our_value_card h1{
+    font-size: 25px;
+    width: max-content;
+  }
 
 /* End Team Section */
 
@@ -86,3 +123,11 @@
     height: auto;
     
 }
+.why_choose_us .our_value_con .our_value_card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+

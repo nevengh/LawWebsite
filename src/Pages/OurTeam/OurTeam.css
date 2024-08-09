@@ -1,9 +1,5 @@
 .Our_team_Head{
     margin-top: 100px;
-    /* display: flex;
-    justify-content: start;
-    align-items: center;
-    gap: 30px; */
 }
 .Our_team_Head h1{
     color: var(--primary_color);
