@@ -38,12 +38,45 @@ export interface TranslationStrings {
   why_choose_text_3:string
   why_choose_text_2:string
   why_choose_text_1:string
+  team_1_name:string
+  team_1_info:string
+  // team_1_number:string
+  team_2_name:string
+  team_2_info:string
+  team_3_name:string
+  team_3_info:string
+  team_4_name:string
+  team_4_info:string
+  team_5_name:string
+  team_5_info:string
+  Our_team_Head_text_1:string
+  Our_team_Head_text_2:string
+  Our_team_Head_text_3:string
+  team_3_phone:string
+  team_2_phone:string
+  team_1_phone:string
 }
 
 export type Translation = Record<Language, TranslationStrings>;
 
 const translation: Translation = {
   en: {
+    Our_team_Head_text_1:"Whatever the size of your business",
+    Our_team_Head_text_2:"Or the pressures you are exposed to",
+    Our_team_Head_text_3:"We have the experience and skill to provide you with a strategic partnership through which we bear all the burdens of work from a technical standpoint (preparing memoranda, lawsuits and appeals before all courts at all levels) so that you can devote yourself to developing a network of relationships and serving your clients to reach unprecedented levels of development and growth.",
+    team_1_name: "MR. AHMED BAGHDADI",
+    team_1_info: "LEGAL CONSULTANT",
+    team_2_name: "MR. AHMED BIN MOUSA",
+    team_2_info: "EXECUTIVE DIRECTOR / CEO",
+    team_3_name: "MS. QAMAR AL KASSADI",
+    team_3_info: "LAWYER AND LEGAL CONSULTANT / FOUNDER",
+    team_4_name:"MIKE SANTOUNE",
+    team_4_info:"RECEPTIONIST",
+    team_5_name:"AHMED NAGI",
+    team_5_info:"LEGAL REASERCHER",
+    team_3_phone:"+971 55 312 2302 ",
+    team_1_phone:"+971 55 987 5671",
+    team_2_phone:"+971 58 668 9000",
     home: "Home",
     about: "About",
     services: "Services",
@@ -82,6 +115,22 @@ const translation: Translation = {
     text_about:"We are Qamar Al Kassadi Advocates & Legal Consultations,one of the senior law firms in the country.We are registered in all state courts and at all levels.We firmly believe that the interest of our clients is our priority in work and we always strive to achieve the best results.Our practicl history testifies to our skill and competence in various branches of law.Our team has been carefully selected in order to find the best legal solutions for our clients,we have a professional team that is loyal,sympathetic,listener,creative and productive."
   },
   ar: {
+    Our_team_Head_text_1:"أيا كان حجم أعمالك",
+    Our_team_Head_text_2:"أو الضغوط التي تتعرض لها",
+    Our_team_Head_text_3:"لدينا الخبرة والمهارة لنقدم لك شراكة استؤاتيجية نتحمل من خلالها كافة أعباء العمل من الناحية الفنية(إعداد المذكرات وصحف الدعاوى والطعون أمام جميع المحاكم بكافة درجاتها) حتى تتفرغ لتنمية شبكة علاقات وخدمة عملائك للوصول الى مستويات غير مسبوقة من التطور والنمو.",
+    team_1_name: "أ. أﺣﻤﺪ ﺑﻐﺪادي",
+    team_1_info: "ﻣﺴﺘﺸـــــــــــــــــــــــــــﺎر ﻗﺎﻧﻮﻧــــــــــــــــــﻲ",
+    team_2_name: "أ. أﺣﻤﺪ ﺑﻦ ﻣﻮﺳﻰ",
+    team_2_info: "اﻟﻤﺪﻳﺮ اﻟﺘﻨﻔﻴﺬي / اﻟﺮﺋﻴﺲ اﻟﺘﻨﻔﻴﺬي",
+    team_3_name: "أ. ﻗﻤﺮ اﻟﻜﺴﺎدي",
+    team_3_info: "ﻣﺤﺎﻣﻲ وﻣﺴﺘﺸﺎر ﻗﺎﻧﻮﻧﻲ/ ﻣﺆﺳﺲ",
+    team_4_name:"ﻣﺎﻳــﻚ ﺳﻨﺘﺎوون",
+    team_4_info:"ﻻﺳﺘﻘﺒـــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــﺎل",
+    team_5_name:"أﺣﻤﺪ ﻧﺎﺟـــــــــــــﻲ",
+    team_5_info:"ﺑﺎﺣــــــــــــــــــــــــــــــــــــﺚ ﻗﺎﻧﻮﻧـــــــــــــــــــي",
+    team_1_phone:"+971 55 987 5671",
+    team_3_phone:"+971 55 312 2302 ",
+    team_2_phone:"+971 58 668 9000",
     home: "الرئيسية",
     about: "من نحن",
     services: "الخدمات",

@@ -1,0 +1,33 @@
+.Our_team_Head{
+    margin-top: 100px;
+    /* display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 30px; */
+}
+.Our_team_Head h1{
+    color: var(--primary_color);
+    font-weight: 700;
+    width: max-content;
+    border-bottom: 5px solid var(--primary_color);
+    padding: 5px;
+    margin-bottom: 30px;
+}
+.Our_team_Head_text{
+    border: 3px solid var(--secondary_color);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 100px;
+}
+.Our_team_Head_text h4{
+    font-size: 25px;
+    color: #937b56;
+    font-weight: 700;
+}
+.Our_team_Head_text p{
+    
+    margin-top: 30px;
+    font-size: 20px;
+    max-width: 700px;
+    color: var(--primary_color);
+}

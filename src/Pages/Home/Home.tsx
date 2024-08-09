@@ -3,39 +3,29 @@ import { motion } from "framer-motion";
 import "./Home.css";
 import Hero from "../../Components/Hero/Hero";
 import About from "../About/About";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import TeamCard from "../../Components/TeamCard/TeamCard";
-import TeamInfo from "../../Db/TeamInfo.json";
 import SectionHeading from "../../Components/SectionHeading/SectionHeading";
-import translation, { Language } from "../../Db/translation";
+import translation, { Language, TranslationStrings } from "../../Db/translation";
 
 // Import images
-import firstUser from "../../assets/images/Hero.webp";
-import secondUser from "../../assets/images/wesley-tingey-9z9fxr_7Z-k-unsplash.webp";
-import thirdUser from "../../assets/images/Hero.webp";
+import firstUser from "../../assets/images/Ahmad.webp";
+import secondUser from "../../assets/images/Mosa.webp";
+import thirdUser from "../../assets/images/Qamar.webp";
 
 interface HomeProps {
   language: Language;
 }
 
 const Home: React.FC<HomeProps> = ({ language }) => {
-  const navigate = useNavigate();
-  // Create a mapping of image names to imported images
+
   const imageMap: { [key: string]: string } = {
-    "Hero.jpg": firstUser,
-    "Fie.jpg": secondUser,
-    "Neven.jpg": thirdUser,
+    "Ahmad.jpg": firstUser,
+    "Mosa.jpg": secondUser,
+    "Qamar.jpg": thirdUser,
   };
 
-  const handleTeamCardClick = (teamMember: {
-    id: number;
-    teamName: string;
-    info: string;
-    image: string;
-  }) => {
-    // Navigate to the 'team-work' route and pass the team member data as state
-    navigate("/team-work", { state: teamMember });
-  };
+  
 
   return (
     <div>
@@ -107,13 +97,35 @@ const Home: React.FC<HomeProps> = ({ language }) => {
        =========================
        */}
       <div className="team_section">
-        <SectionHeading
+      <SectionHeading
           subhead="our_team_subhead"
           mainhead="our_team_mainhead"
           language={language}
         />
-        <div className="team_card_container main_container">
-          {TeamInfo.map((team) => (
+        <div className="team_card_container ">
+          {[
+            {
+              id: 1,
+              teamName: 'team_1_name', // These should be keys in the translation file
+              info: 'team_1_info',
+              image: 'Ahmad.jpg',
+              phone:'team_1_phone',
+            },
+            {
+              id: 2,
+              teamName: 'team_2_name',
+              info: 'team_2_info',
+              image: 'Mosa.jpg',
+              phone:'team_2_phone',
+            },
+            {
+              id: 3,
+              teamName: 'team_3_name',
+              info: 'team_3_info',
+              image: 'Qamar.jpg',
+              phone:'team_3_phone',
+            },
+          ].map((team) => (
             <motion.div
               key={team.id}
               whileInView={{ opacity: 1, scale: 1 }}
@@ -122,14 +134,15 @@ const Home: React.FC<HomeProps> = ({ language }) => {
             >
               <TeamCard
                 img={imageMap[team.image]}
-                teamName={team.teamName}
-                info={team.info}
-                onClick={() => handleTeamCardClick(team)}
-                // language={language}
+                teamName={team.teamName as keyof TranslationStrings}
+                info={team.info as keyof TranslationStrings}
+                phone={team.phone as keyof TranslationStrings}
+                language={language}
               />
             </motion.div>
           ))}
         </div>
+          <Link to='all-team' className="show_all">عرض الكل </Link>
       </div>
       {/*
       =========================

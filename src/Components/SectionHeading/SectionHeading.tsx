@@ -9,9 +9,6 @@ interface SectionHeadingProps {
 }
 
 const SectionHeading: React.FC<SectionHeadingProps> = ({ subhead, mainhead, language }) => {
-  // console.log('Language:', language);
-  // console.log('Subhead:', subhead, translation[language][subhead]);
-  // console.log('Mainhead:', mainhead, translation[language][mainhead]);
   return (
     <div className='SectionHeading'>
       <div className="team_heading">

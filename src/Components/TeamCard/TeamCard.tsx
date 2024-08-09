@@ -1,20 +1,23 @@
-import React from "react";
-import "./TeamCard.css";
+import React from 'react';
+import './TeamCard.css';
+import translation, { Language, TranslationStrings } from '../../Db/translation';
+import { FaWhatsapp } from 'react-icons/fa';
 
 interface TeamCardProps {
-  img: string;      // URL of the image
-  teamName: string; // Name of the team member
-  info: string;  
-  onClick: () => void; 
-    // Additional information about the team member
+  img: string;                   // URL of the image
+  teamName: keyof TranslationStrings; // Key for the translated name
+  info: keyof TranslationStrings;     // Key for the translated info
+  language: Language;
+  phone: keyof TranslationStrings;            // Language prop to select the correct translation
 }
 
-const TeamCard: React.FC<TeamCardProps> = ({ img, teamName, info,onClick }) => {
+const TeamCard: React.FC<TeamCardProps> = ({ img, teamName, info, language ,phone }) => {
   return (
-    <div className="TeamCard" onClick={onClick}>
-      <img src={img} alt={teamName} />
-      <h2 className="name">{teamName}</h2>
-      <h4 className="name_info">{info}</h4>
+    <div className="TeamCard">
+      <img src={img} alt={translation[language][teamName]} />
+      <h2 className="name">{translation[language][teamName]}</h2>
+      <h4 className="name_info">{translation[language][info]}</h4>
+      <p><FaWhatsapp/> <span>{translation[language][phone]}</span></p>
     </div>
   );
 }
