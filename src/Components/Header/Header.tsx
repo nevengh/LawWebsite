@@ -26,6 +26,7 @@ function Header({ language, setLanguage }: HeaderProps) {
   return (
     <>
       <TopBanner />
+      
       <div className="navbar ">
         <div className="logo"><img src={logo} alt="Al Kassadi Logo" /></div>
         <div className={`menu ${isMobileMenuOpen ? 'active' : ''}`}>
