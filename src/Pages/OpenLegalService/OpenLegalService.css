@@ -1,0 +1,15 @@
+.HJ_ServiceDetails{
+    margin: 20px;
+}
+.HJ_ServiceDetails h2{
+    font-size: 30px;
+    color: var(--primary_color);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.HJ_ServiceDetails p{
+    font-size: 20px;
+    color: var(--primary_color);
+    margin-bottom: 10px;
+}

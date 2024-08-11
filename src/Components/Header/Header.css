@@ -4,6 +4,9 @@
     justify-content: space-between;
     align-items: center;
     position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: white;
 }
 .logo img{
     width: 60px;
