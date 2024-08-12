@@ -5,34 +5,7 @@
     justify-content: center;
     align-items: center;
 }
-/* .contact_us_form form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 50px;
-    width: 60%;
-    background: linear-gradient(#212121, #212121) padding-box,
-              linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
-  border: 2px solid transparent;
-  padding: 32px 24px;
 
-}
-.contact_us_form form .input-group  {
-display: flex;
-flex-direction: column;
-gap: 20px;
-
-}
-.contact_us_form form input,textarea{
-    padding: 1rem;
-    border: none;
-    outline: none;
-    border-bottom: 2px solid var(--primary_color);
-    width: 80%;
-   margin: 0 auto;
-} */
-
-/* From Uiverse.io by gharsh11032000 */ 
 .form-container {
     width:60%;
     margin: 105px auto;
@@ -137,5 +110,9 @@ gap: 20px;
   }
   
   
-  
+  @media(max-width:520px){
+    .form-container{
+      width: 90%;
+    }
+  }
   

@@ -1,11 +1,40 @@
 import { Link } from 'react-router-dom';
+import { useRef } from "react";
 import translation, { Language }  from '../../Db/translation';
 import './ContactUS.css'
 import { motion } from 'framer-motion';
+import emailjs from "@emailjs/browser";
 interface ContactProps{
     language: Language;
 }
 const ContactUS: React.FC<ContactProps> = ({ language }) => {
+
+    const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_qnz4n1e",
+        "template_9snqi76",
+        form.current,
+        "Dhw_22hh8etdn_F7B"
+      )
+      .then(
+        (response) => {
+          console.log(response);
+          alert("Email sent successfully");
+          
+          e.target.reset();
+        },
+        (error) => {
+          console.log(error);
+          alert("Something went wrong");
+        }
+      );
+  };
+
+
      const map ="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3607.0609464668028!2d55.36490247494584!3d25.302156327442166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5c785ad1227b%3A0x4b873618560e813d!2sQamar%20Al%20Kassadi%20Advocates%20%26%20Legal%20Consultants!5e0!3m2!1sen!2s!4v1723213060571!5m2!1sen!2s"
   return (
     <div className='ContactUS'>
@@ -22,14 +51,15 @@ const ContactUS: React.FC<ContactProps> = ({ language }) => {
         </div>
       </div>
       <div className="form-container">
-      <form className="form">
+      <form className="form" ref={form} onSubmit={sendEmail}>
         <div className="form-group">
           <label htmlFor="name">{translation[language].form_name}</label>
-          <input type="text" id="name" name="name" />
+          <input type="text" id="name" name="user_name" required />
         </div>
         <div className="form-group">
           <label htmlFor="email">{translation[language].form_email}</label>
-          <input type="text" id="email" name="email" />
+          <input type="text" id="email" name="email"
+              required />
         </div>
         <div className="form-group">
           <label htmlFor="phone">{translation[language].form_phone}</label>
@@ -37,7 +67,7 @@ const ContactUS: React.FC<ContactProps> = ({ language }) => {
         </div>
         <div className="form-group">
           <label htmlFor="textarea">{translation[language].form_message}</label>
-          <textarea name="textarea" id="textarea"  />  
+          <textarea name="message" id="textarea"  />  
         </div>
         <button className="form-submit-btn" type="submit">{translation[language].form_submit}</button>
       </form>

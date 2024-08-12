@@ -32,7 +32,7 @@
 
 .info p a:hover,
 .social_side a:hover {
-    color: var(--secondary_color);
+    color: #c9cacd;
 }
 
 .social_side a {

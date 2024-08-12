@@ -1,5 +1,6 @@
 .Footer {
-    background-color: white;
+   
+    background: linear-gradient(135deg, #0d1120 0%, #3c5a75d2 43%, #0d11207a 100%);
     width: 100%;
     padding: 50px 20px 50px 20px;
     margin-top: 50px;
@@ -26,7 +27,7 @@
 .Footer .HJ_ContainerFooter .HJ_PartDetails .HJ_parahraph {
     width: 500.5px;
     font-size: 16px;
-    color: var(--primary_color);
+    color: #d9e0ec;
 }
 
 .Footer .HJ_ContainerFooter .HJ_PartTitles .HJ_Links {
@@ -38,7 +39,7 @@
 }
 
 .Footer .HJ_ContainerFooter .HJ_PartTitles .HJ_Links span {
-    color: var(--primary_color);
+    color: #d9e0ec;
     font-size: 18px;
 }
 
@@ -51,14 +52,14 @@
 }
 
 .Footer .HJ_ContainerFooter .HJ_AllServices span {
-    color: var(--primary_color);
+    color: #d9e0ec;
     font-size: 18px;
 }
 
 .Footer .HJ_ContainerFooter .HJ_MainTitle {
     font-size: 25px;
     font-weight: bold;
-    color: var(--primary_color);
+    color: #d9e0ec;
 }
 
 .HJ_ContainerSectionFooter {
@@ -71,7 +72,7 @@
 
 .social_side .Icon {
     margin-left: 25px;
-    color: var(--primary_color);
+    color: #d9e0ec;
     font-size: 20px;
     transition: .3s;
 }

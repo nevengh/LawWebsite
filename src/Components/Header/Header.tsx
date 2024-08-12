@@ -34,9 +34,9 @@ function Header({ language, setLanguage }: HeaderProps) {
           <Link to="/about-page">{translation[language].about}</Link>
 
           <Link to="/all-legalServices">{translation[language].services}</Link>
-          <Link to="/contact">{translation[language].contact}</Link>
+          {/* <Link to="/contact">{translation[language].contact}</Link> */}
 
-          <Link to="/services">{translation[language].services}</Link>
+          {/* <Link to="/services">{translation[language].services}</Link> */}
           <Link to="/all-team">{translation[language].team}</Link>
           <Link to="/conatct-us">{translation[language].contact}</Link>
 
