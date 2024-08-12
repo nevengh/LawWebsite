@@ -47,10 +47,10 @@ const Footer: React.FC<FooterProps> = ({ language }) => {
                             <Link to='/all-legalServices'>
                                 <span> {translation[language].titleLink3_footer}</span>
                             </Link>
-                            <Link to='/team-work'>
+                            <Link to='/all-team'>
                                 <span >{translation[language].titleLink4_footer} </span>
                             </Link>
-                            <Link to='/contact'>
+                            <Link to='/conatct-us'>
                                 <span > {translation[language].titleLink5_footer} </span>
                             </Link>
                         </div>

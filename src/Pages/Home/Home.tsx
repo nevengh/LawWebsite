@@ -7,10 +7,7 @@ import { Link } from "react-router-dom";
 import SectionHeading from "../../Components/SectionHeading/SectionHeading";
 import ServicesSection from "../../Components/ServicesSection/ServicesSection";
 import TeamSection from "../../Components/TeamSectio/TeamSection";
-import translation, {
-  Language,
-  TranslationStrings,
-} from "../../Db/translation";
+import translation, {Language,} from "../../Db/translation";
 
 
 interface HomeProps {
