@@ -19,7 +19,6 @@ export interface TranslationStrings {
   our_services_subhead: string;
   our_services_mainhead: string;
   about_hero: string;
-
   text_about: string
   about_services: string
   about_services_title: string
@@ -133,7 +132,6 @@ const translation: Translation = {
     Our_team_Head_text_1: "Whatever the size of your business",
     Our_team_Head_text_2: "Or the pressures you are exposed to",
     Our_team_Head_text_3: "We have the experience and skill to provide you with a strategic partnership through which we bear all the burdens of work from a technical standpoint (preparing memoranda, lawsuits and appeals before all courts at all levels) so that you can devote yourself to developing a network of relationships and serving your clients to reach unprecedented levels of development and growth.",
-
     form_submit:"Submit",
     form_email: "Email",
     form_name: "Name",
@@ -157,8 +155,6 @@ const translation: Translation = {
     value_excelence_text_1:
       "We always strive to achieve impressive results with high quality and skill for all our clients.",
     our_value_mainhead: "Our Values",
-    
-
     team_1_name: "MR. AHMED BAGHDADI",
     team_1_info: "LEGAL CONSULTANT",
     team_2_name: "MR. AHMED BIN MOUSA",
@@ -184,7 +180,6 @@ const translation: Translation = {
     hero_title: "Lawyers and Legal Consultants",
     contact_call: "Contact Us",
     about_title: "About Us",
-    
     why_choose_text_3:
       "We take the role of the client and act on their behalf at the appropriate time to achieve the best results for them",
     why_choose_text_2:
@@ -195,7 +190,6 @@ const translation: Translation = {
       "Our practical history testifies to our continued success in criminal justice and recovery cases. We also have a rich history in commercial cases, civil disputes, personal status cases, and labor cases. We have a distinctive style in understanding and studying all our clients' files, radically different from all traditional methods. We read, understand, comprehend, and innovate to find the best solutions that suit our clients' interests.",
     about_content_2:
       "Our practical history testifies to our continued success in criminal justice and recovery cases. We also have a rich history in commercial cases, civil disputes, personal status cases, and labor cases. We have a distinctive style in understanding and studying all our clients' files, radically different from all traditional methods. We read, understand, comprehend, and innovate to find the best solutions that suit our clients' interests.",
-
     our_team_subhead: "Our Team",
     our_team_mainhead: "Our Best Lawyers",
     our_services_subhead: "Our Services",
@@ -204,7 +198,6 @@ const translation: Translation = {
     quality_title: "Quality",
     important_advice_title: "Important advice",
     capicity_title: "Capicity and Credibility",
-
     capicity_text: "We have already laid the foundations Constant to prove our capabilities and credibility and we bear responsibility for our actions.",
     important_advice_text: "Offered by our staff who are highly experience,the right and important advice with regard to the law of the United Arab Emirates.",
     work_knowledg_title: "Knowledge of work",
@@ -262,10 +255,6 @@ const translation: Translation = {
     showAll: "ShowAll",
     work_time_title: " Working hours",
     conatct_us_info_title: " We can solve all your problems",
-
-
-
-  
   },
   ar: {
     form_submit:"إرسال",
@@ -297,7 +286,6 @@ const translation: Translation = {
     Our_team_Head_text_2: "أو الضغوط التي تتعرض لها",
     Our_team_Head_text_3:
       "لدينا الخبرة والمهارة لنقدم لك شراكة استؤاتيجية نتحمل من خلالها كافة أعباء العمل من الناحية الفنية(إعداد المذكرات وصحف الدعاوى والطعون أمام جميع المحاكم بكافة درجاتها) حتى تتفرغ لتنمية شبكة علاقات وخدمة عملائك للوصول الى مستويات غير مسبوقة من التطور والنمو.",
-
     team_1_name: "أ. أﺣﻤﺪ ﺑﻐﺪادي",
     team_1_info: "ﻣﺴﺘﺸـــــــــــــــــــــــــــﺎر ﻗﺎﻧﻮﻧــــــــــــــــــﻲ",
     team_2_name: "أ. أﺣﻤﺪ ﺑﻦ ﻣﻮﺳﻰ",
@@ -305,13 +293,9 @@ const translation: Translation = {
     team_3_name: "أ. ﻗﻤﺮ اﻟﻜﺴﺎدي",
     team_3_info: "ﻣﺤﺎﻣﻲ وﻣﺴﺘﺸﺎر ﻗﺎﻧﻮﻧﻲ/ ﻣﺆﺳﺲ",
     team_4_name: "ﻣﺎﻳــﻚ ﺳﻨﺘﺎوون",
-
     team_4_info: "ﻻﺳﺘﻘﺒـــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــﺎل",
     team_5_name: "أﺣﻤﺪ ﻧﺎﺟـــــــــــــﻲ",
     team_5_info: "ﺑﺎﺣــــــــــــــــــــــــــــــــــــﺚ ﻗﺎﻧﻮﻧـــــــــــــــــــي",
-
-
-
     team_1_phone: "+971 55 987 5671",
     team_3_phone: "+971 55 312 2302 ",
     team_2_phone: "+971 58 668 9000",
@@ -325,15 +309,11 @@ const translation: Translation = {
     hero_title: "محامون واستشياريون قانونيون",
     contact_call: "اتصل بنا",
     about_title: "من نحن",
-
     why_choose_text_3: "ﻧﺄﺧﺬ دور اﻟﻌﻤﻴﻞ و ﻧﺘﺼﺮف ﺑﺎﻟﻮﻛﺎﻟﺔ ﻋﻨﻪ ﻓﻲ اﻟﻮﻗﺖ اﻟﻤﻨﺎﺳﺐ ﻟﺘﺤﻘﻴﻖ اﻓﻀﻞ واﺣﺴﻦ اﻟﻨﺘﺎﺋﺞ ﻟﻪ.",
     why_choose_text_2: "ﻳﺘﻤﻴﺰ أﻓﺮاد ﻣﺆﺳﺴﺔ اﻟﻜﺴﺎدي ﺑﺎﻟﻨﺰاﻫﺔ واﻟﺤﺮص واﻟﻌﻤﻞ اﻟﺠﺎد واﻟﻘﺪرة ﻋﻠﻰ ﺗﻘﻴﻴﻢ اﻷوﺿﺎع اﻟﻘﺎﻧﻮﻧﻴﺔ وﺗﻘﺪﻳﻢ اﻟﺨﺪﻣﺎت ﺑﻔﺎﻋﻠﻴﺔ ، واﻟﺘﻲ ﺗﻘﺘﺮن ﺑﻜﻔﺎءﺗﻨﺎ ﻓﻲ إﻳﺠﺎد اﻟﺤﻠﻮل ﻷي ﺻﻌﻮﺑﺎت.",
     why_choose_text_1: "ﻛﻮﻧﻨﺎ ﻓﺮﻳﻖ ﻣﺨﺘﺎر ﺑﻌﻨﺎﻳﺔ ﻣﻦ اﻟﻘﺎﻧﻮﻧﻴﻴﻦ اﻟﻤﺘﻤﺮﺳﻴﻦ ﻣﻦ ﺟﻨﺴﻴﺎت ﻣﺨﺘﻠﻔﺔ ﻧﺴﻌﻰ ﺟﺎﻫﺪﻳﻦ ﻟﺘﻮﻓﻴﺮ أﻓﻀﻞ ﻣﺴﺘﻮى ﻣﻦ اﻟﺨﺪﻣﺔ ﺑﻘﺪرة وﻛﻔﺎءة ﻋﺎﻟﻴﺔ.",
     about_content_1: "تاريخنا العملي يشهد لنا بالنجاح المستمر في القضاء الجنائي وقضايا الاسترداد. كما أنه لنا تاريخ زاخر في القضايا التجارية والنزاعات المدنية وقضايا الأحوال الشخصية والقضايا العمالية, ولنا أسلوب متميز في فهم ودراسة كافة ملفات عملائنا نختلف جذريا عن كافة الأساليب التقليدية.نقرأ,نفهم وندرك ونبدع لإيجاد الحلول الأفضل التي تتلائم مع صملحة عملائنا.",
     about_content_2: "تاريخنا العملي يشهد لنا بالنجاح المستمر في القضاء الجنائي وقضايا الاسترداد. كما أنه لنا تاريخ زاخر في القضايا التجارية والنزاعات المدنية وقضايا الأحوال الشخصية والقضايا العمالية, ولنا أسلوب متميز في فهم ودراسة كافة ملفات عملائنا نختلف جذريا عن كافة الأساليب التقليدية.نقرأ,نفهم وندرك ونبدع لإيجاد الحلول الأفضل التي تتلائم مع صملحة عملائنا.",
-
-  
-
     our_team_subhead: "فريقنا",
     our_team_mainhead: "أفضل محامينا",
     our_services_subhead: "خدماتنا",
@@ -343,7 +323,6 @@ const translation: Translation = {
     why_choose_mainhead: "لماذا تختارنا",
     important_advice_title: "النصيحة الهامة",
     capicity_title: "القدؤة والمصداقية",
-
     capicity_text: "نحن بالفعل وضعنا أسس ثابتة لإثبات قدراتنا ومصداقياتنا ونحن نتحمل مسؤولية أفعالنا.",
     important_advice_text: "يقدم فريق عملنا الذي يتمتع بالخبرة والكفاءى العالية النصائح الصحيحة والهامة فيما يختص بقانون الامارات العربية المتحدة.",
     work_knowledg_title: "الإلمام بالعمل",
@@ -400,7 +379,6 @@ const translation: Translation = {
     allLegalServices_mainhead: "خدماتنا القانونية",
     readMore: "اقرأ المزيد",
     showAll: "عرض الكل",
- 
   },
 
 };
