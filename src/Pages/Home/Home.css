@@ -65,7 +65,7 @@
     width: max-content;
     margin: 50px auto;
 }
-.team_card_container{
+.team_card_container , .Service_card_container{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,6 +73,7 @@
     gap: 40px;
     
 }
+
 
 /* OUR VALUES Section */
 

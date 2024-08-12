@@ -1,6 +1,5 @@
-.TopBanner
-{
-    
+.TopBanner {
+
     padding: 15px 30px;
     display: flex;
     justify-content: space-between;
@@ -9,33 +8,34 @@
 }
 
 
-.contact_side
-{
+.contact_side {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
 }
 
-.info
-{
+.info {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 15px;
 }
-.info svg , .info p , .info p a{
+
+.info svg,
+.info p,
+.info p a {
     color: var(--white_color);
     cursor: pointer;
     transition: .3s;
 }
-.info p a:hover,.social_side a:hover
-{
+
+.info p a:hover,
+.social_side a:hover {
     color: var(--secondary_color);
 }
 
-.social_side a
-{
+.social_side a {
     margin-left: 25px;
     color: var(--white_color);
     font-size: 20px;
@@ -44,8 +44,7 @@
 
 
 @media (max-width: 768px) {
-    .TopBanner
-    {
+    .TopBanner {
         display: none;
     }
 }

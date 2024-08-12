@@ -1,0 +1,36 @@
+.ServiceCard {
+    width: 350px;
+    padding: 20px;
+    max-height:100%;
+    position: relative;
+    border-radius: 15px;
+    /* Add border radius */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    /* Add box shadow */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ServiceCard:hover {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.522);
+}
+.ServiceCard h2{
+    font-size: 22px;
+    color: var(--primary_color);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.ServiceCard p{
+    font-size: 16px;
+    color: var(--primary_color);
+}
+.HJ_ReadMore{
+    color: var(--primary_color);
+    font-weight: bold;
+    text-decoration:underline;
+    margin-top: 20px;
+    cursor: pointer;
+}

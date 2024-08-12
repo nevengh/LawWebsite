@@ -1,0 +1,184 @@
+.Footer {
+    background-color: white;
+    width: 100%;
+    padding: 50px 20px 50px 20px;
+    margin-top: 50px;
+
+}
+
+.Footer .HJ_ContainerFooter {
+    display: flex;
+    gap: 15%;
+}
+
+.Footer .HJ_ContainerFooter .HJ_PartDetails {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.Footer .HJ_ContainerFooter .HJ_PartDetails .logo_Footer img {
+    width: 100px;
+}
+
+.Footer .HJ_ContainerFooter .HJ_PartDetails .HJ_parahraph {
+    width: 500.5px;
+    font-size: 16px;
+    color: var(--primary_color);
+}
+
+.Footer .HJ_ContainerFooter .HJ_PartTitles .HJ_Links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.Footer .HJ_ContainerFooter .HJ_PartTitles .HJ_Links span {
+    color: var(--primary_color);
+    font-size: 18px;
+}
+
+.Footer .HJ_ContainerFooter .HJ_AllServices {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.Footer .HJ_ContainerFooter .HJ_AllServices span {
+    color: var(--primary_color);
+    font-size: 18px;
+}
+
+.Footer .HJ_ContainerFooter .HJ_MainTitle {
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--primary_color);
+}
+
+.HJ_ContainerSectionFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 180px;
+}
+
+.social_side .Icon {
+    margin-left: 25px;
+    color: var(--primary_color);
+    font-size: 20px;
+    transition: .3s;
+}
+
+@media screen and (max-width : 1207px) and (min-width : 997px) {
+    .HJ_ContainerSectionFooter {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 8%;
+    }
+
+    .HJ_PartServices {
+        width: 244px;
+    }
+
+
+}
+@media screen and (max-width : 997px) and (min-width : 993px) {
+    .HJ_ContainerSectionFooter {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 2%;
+    }
+
+    .HJ_PartServices {
+        width: 244px;
+    }
+
+
+}
+
+
+@media screen and (max-width : 992px) {
+    .Footer .HJ_ContainerFooter {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .HJ_ContainerSectionFooter {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 50%;
+    }
+
+    .Footer .HJ_ContainerFooter .HJ_MainTitle {
+        font-size: 28px;
+    }
+
+    .Footer .HJ_ContainerFooter .HJ_PartTitles .HJ_Links span {
+        font-size: 20px;
+    }
+
+    .Footer .HJ_ContainerFooter .HJ_PartDetails .HJ_parahraph {
+        width: 100%;
+        font-size: 25px;
+    }
+
+    .Footer .HJ_ContainerFooter .HJ_PartDetails .logo_Footer img {
+        width: 130px;
+    }
+
+    .Footer .HJ_ContainerFooter .HJ_AllServices span {
+        font-size: 20px;
+        
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .Footer .HJ_ContainerFooter {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .HJ_ContainerSectionFooter {
+        margin-top: 40px;
+        gap: 20%;
+    }
+
+    .Footer .HJ_ContainerFooter .HJ_MainTitle {
+        font-size: 20px;
+    }
+
+    .Footer .HJ_ContainerFooter .HJ_PartTitles .HJ_Links span {
+        font-size: 18px;
+    }
+
+    .Footer .HJ_ContainerFooter .HJ_PartDetails .HJ_parahraph {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .Footer .HJ_ContainerFooter .HJ_PartDetails .logo_Footer img {
+        width: 130px;
+    }
+
+    .Footer .HJ_ContainerFooter .HJ_AllServices span {
+        font-size: 18px;
+    }
+}
