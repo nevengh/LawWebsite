@@ -142,7 +142,7 @@ const translation: Translation = {
     contact_hero: "Contact Us",
     email_title: "Email Address",
     phone_title: "Phone Number",
-    conatct_us_subhead: "conatct us",
+    conatct_us_subhead: "conattc us",
     conatct_us_mainhead: "Contact Us",
     justic_title: "Justice",
     justic_text:
@@ -157,10 +157,7 @@ const translation: Translation = {
     value_excelence_text_1:
       "We always strive to achieve impressive results with high quality and skill for all our clients.",
     our_value_mainhead: "Our Values",
-    Our_team_Head_text_1: "Whatever the size of your business",
-    Our_team_Head_text_2: "Or the pressures you are exposed to",
-    Our_team_Head_text_3:
-      "We have the experience and skill to provide you with a strategic partnership through which we bear all the burdens of work from a technical standpoint (preparing memoranda, lawsuits and appeals before all courts at all levels) so that you can devote yourself to developing a network of relationships and serving your clients to reach unprecedented levels of development and growth.",
+    
 
     team_1_name: "MR. AHMED BAGHDADI",
     team_1_info: "LEGAL CONSULTANT",
@@ -263,25 +260,12 @@ const translation: Translation = {
     allLegalServices_mainhead: "Our legal services",
     readMore: "ReadMore",
     showAll: "ShowAll",
+    work_time_title: " Working hours",
+    conatct_us_info_title: " We can solve all your problems",
 
-    capicity_text:
-      "We have already laid the foundations Constant to prove our capabilities and credibility and we bear responsibility for our actions.",
-    important_advice_text:
-      "Offered by our staff who are highly experience,the right and important advice with regard to the law of the United Arab Emirates.",
-    work_knowledg_title: "Knowledge of work",
-    work_knowledg_text:
-      "We take care of our customers,We give them all the care,We deal with caution in understanding their requirements.",
-    quality_text:
-      "We understan very well that often the customer inquiries about the information previously he/she has acknowledged,but we welcome the difficulties and challenges which comes down to the smallest details and the most difficult.",
-    our_partner_title: "Our Partners",
-    our_work_title: "How do we do it ?",
-    our_partner:
-      "Our partner list includes more tahn 20 Law firms and consultancies in the UAE for more than 10 years. We are proud to achieve a satisfaction rate that is not less than 85% for our partners.",
-    about_services_title: "What we offer ?",
-    about_services:
-      "Qamar Al Kassadi Advocates and Legal Consultations appreciates the importance of an efficient team,and for this,our clients can reply on our extensive scientific and practical experience,in the thorny legal fields,we are a legal unstitution that offers its services in a range of languages,for example but not limited to:Arabic,English,French,Russian,Hindi,Urdu,Persian and Filipino.",
-    text_about:
-      "We are Qamar Al Kassadi Advocates & Legal Consultations,one of the senior law firms in the country.We are registered in all state courts and at all levels.We firmly believe that the interest of our clients is our priority in work and we always strive to achieve the best results.Our practicl history testifies to our skill and competence in various branches of law.Our team has been carefully selected in order to find the best legal solutions for our clients,we have a professional team that is loyal,sympathetic,listener,creative and productive.",
+
+
+  
   },
   ar: {
     form_submit:"إرسال",
@@ -326,11 +310,7 @@ const translation: Translation = {
     team_5_name: "أﺣﻤﺪ ﻧﺎﺟـــــــــــــﻲ",
     team_5_info: "ﺑﺎﺣــــــــــــــــــــــــــــــــــــﺚ ﻗﺎﻧﻮﻧـــــــــــــــــــي",
 
-    team_4_info:
-      "ﻻﺳﺘﻘﺒـــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــﺎل",
-    team_5_name: "أﺣﻤﺪ ﻧﺎﺟـــــــــــــﻲ",
-    team_5_info:
-      "ﺑﺎﺣــــــــــــــــــــــــــــــــــــﺚ ﻗﺎﻧﻮﻧـــــــــــــــــــي",
+
 
     team_1_phone: "+971 55 987 5671",
     team_3_phone: "+971 55 312 2302 ",
@@ -352,16 +332,7 @@ const translation: Translation = {
     about_content_1: "تاريخنا العملي يشهد لنا بالنجاح المستمر في القضاء الجنائي وقضايا الاسترداد. كما أنه لنا تاريخ زاخر في القضايا التجارية والنزاعات المدنية وقضايا الأحوال الشخصية والقضايا العمالية, ولنا أسلوب متميز في فهم ودراسة كافة ملفات عملائنا نختلف جذريا عن كافة الأساليب التقليدية.نقرأ,نفهم وندرك ونبدع لإيجاد الحلول الأفضل التي تتلائم مع صملحة عملائنا.",
     about_content_2: "تاريخنا العملي يشهد لنا بالنجاح المستمر في القضاء الجنائي وقضايا الاسترداد. كما أنه لنا تاريخ زاخر في القضايا التجارية والنزاعات المدنية وقضايا الأحوال الشخصية والقضايا العمالية, ولنا أسلوب متميز في فهم ودراسة كافة ملفات عملائنا نختلف جذريا عن كافة الأساليب التقليدية.نقرأ,نفهم وندرك ونبدع لإيجاد الحلول الأفضل التي تتلائم مع صملحة عملائنا.",
 
-    why_choose_text_3:
-      "ﻧﺄﺧﺬ دور اﻟﻌﻤﻴﻞ و ﻧﺘﺼﺮف ﺑﺎﻟﻮﻛﺎﻟﺔ ﻋﻨﻪ ﻓﻲ اﻟﻮﻗﺖ اﻟﻤﻨﺎﺳﺐ ﻟﺘﺤﻘﻴﻖ اﻓﻀﻞ واﺣﺴﻦ اﻟﻨﺘﺎﺋﺞ ﻟﻪ.",
-    why_choose_text_2:
-      "ﻳﺘﻤﻴﺰ أﻓﺮاد ﻣﺆﺳﺴﺔ اﻟﻜﺴﺎدي ﺑﺎﻟﻨﺰاﻫﺔ واﻟﺤﺮص واﻟﻌﻤﻞ اﻟﺠﺎد واﻟﻘﺪرة ﻋﻠﻰ ﺗﻘﻴﻴﻢ اﻷوﺿﺎع اﻟﻘﺎﻧﻮﻧﻴﺔ وﺗﻘﺪﻳﻢ اﻟﺨﺪﻣﺎت ﺑﻔﺎﻋﻠﻴﺔ ، واﻟﺘﻲ ﺗﻘﺘﺮن ﺑﻜﻔﺎءﺗﻨﺎ ﻓﻲ إﻳﺠﺎد اﻟﺤﻠﻮل ﻷي ﺻﻌﻮﺑﺎت.",
-    why_choose_text_1:
-      "ﻛﻮﻧﻨﺎ ﻓﺮﻳﻖ ﻣﺨﺘﺎر ﺑﻌﻨﺎﻳﺔ ﻣﻦ اﻟﻘﺎﻧﻮﻧﻴﻴﻦ اﻟﻤﺘﻤﺮﺳﻴﻦ ﻣﻦ ﺟﻨﺴﻴﺎت ﻣﺨﺘﻠﻔﺔ ﻧﺴﻌﻰ ﺟﺎﻫﺪﻳﻦ ﻟﺘﻮﻓﻴﺮ أﻓﻀﻞ ﻣﺴﺘﻮى ﻣﻦ اﻟﺨﺪﻣﺔ ﺑﻘﺪرة وﻛﻔﺎءة ﻋﺎﻟﻴﺔ.",
-    about_content_1:
-      "تاريخنا العملي يشهد لنا بالنجاح المستمر في القضاء الجنائي وقضايا الاسترداد. كما أنه لنا تاريخ زاخر في القضايا التجارية والنزاعات المدنية وقضايا الأحوال الشخصية والقضايا العمالية, ولنا أسلوب متميز في فهم ودراسة كافة ملفات عملائنا نختلف جذريا عن كافة الأساليب التقليدية.نقرأ,نفهم وندرك ونبدع لإيجاد الحلول الأفضل التي تتلائم مع صملحة عملائنا.",
-    about_content_2:
-      "تاريخنا العملي يشهد لنا بالنجاح المستمر في القضاء الجنائي وقضايا الاسترداد. كما أنه لنا تاريخ زاخر في القضايا التجارية والنزاعات المدنية وقضايا الأحوال الشخصية والقضايا العمالية, ولنا أسلوب متميز في فهم ودراسة كافة ملفات عملائنا نختلف جذريا عن كافة الأساليب التقليدية.نقرأ,نفهم وندرك ونبدع لإيجاد الحلول الأفضل التي تتلائم مع صملحة عملائنا.",
+  
 
     our_team_subhead: "فريقنا",
     our_team_mainhead: "أفضل محامينا",
@@ -430,25 +401,6 @@ const translation: Translation = {
     readMore: "اقرأ المزيد",
     showAll: "عرض الكل",
  
-    capicity_text:
-      "نحن بالفعل وضعنا أسس ثابتة لإثبات قدراتنا ومصداقياتنا ونحن نتحمل مسؤولية أفعالنا.",
-    important_advice_text:
-      "يقدم فريق عملنا الذي يتمتع بالخبرة والكفاءى العالية النصائح الصحيحة والهامة فيما يختص بقانون الامارات العربية المتحدة.",
-    work_knowledg_title: "الإلمام بالعمل",
-    work_knowledg_text:
-      "نحن نعتني بعملائنا ونمنحهم كل الرعاية ونتعامل بحذر في فهم متطلباتهم.",
-    quality_title: " الجودة",
-    quality_text:
-      "نحن نفهم جيدا أنه في كثير من الأحيان يقوم العميل بالاستفسار عن معلومات قدسبق له معرفتها ولكننا نرحب بالصعوبات والتحديات التي تأتي بأجق التفاصيل وأكثرها صعوبة.",
-    about_services_title: "ماذا نقدم ؟",
-    our_partner_title: "شركاؤنا:",
-    our_work_title: "طريقة عملنا ؟",
-    our_partner:
-      "تضم قائمة شركائنا أكثر من 20 مكتب محاماة واستشارات قانونية في الامارات العربية المتحدة لأكثر من 10 سنوات. نحن فخورين بتحقيق نسبة رضا لا تقل عن 85% لشركائنا.",
-    about_services:
-      " تقدر مؤسسة قمر الكسادي للمحاماة و الاستشارات القانونية وأهمية فريق العمل الكفء ولهذا فإن عملائنا يمكنهم الاعتماد على خبرتنا العلمية والعملية الواسعة في المجالات القانونية الشائكة فنحن مؤسسة قانونية تقدم خدماتها بمجموعة من اللغات منها على سبيل المثال لا الحصر:اللغة العربية,اللغة الانجليزية,اللغة الفرنسية ,اللغة الروسية ,اللغةالهندية,الأردو.اللغة الفارسية واللغة الفلبينية.",
-    text_about:
-      "نحن مكتب قمر الكسادي للمحاماة والاستشارات القانونية من أعرق  وأقدم مكاتب المحاماة في الدولة, مسجلون في كافة محاكم الدولة وبجميع درجاتها, نعتقد جازمين بأن مصلحة عملائنا هي  أولوياتنا في العمل ونسعى دائما لتحقيق أفضل النتائج. تاريخنا العملي يشهد لمهاراتنا وكفاءتنا في مختلف فروع القانون.     تم اختيار فريق العمل بعناية تامة سعيا لإيجاد أفضل الحلول القانونية لعملائنا, فلديتنا فريق عمل مخلص مهنيا, متجانس, مستمع, مبدع ومنتج.",
   },
 
 };
