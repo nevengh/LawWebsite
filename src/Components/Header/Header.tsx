@@ -32,9 +32,14 @@ function Header({ language, setLanguage }: HeaderProps) {
         <div className={`menu ${isMobileMenuOpen ? 'active' : ''}`}>
           <Link to="/">{translation[language].home}</Link>
           <Link to="/about-page">{translation[language].about}</Link>
+
           <Link to="/all-legalServices">{translation[language].services}</Link>
-          <Link to="/team-work">{translation[language].team}</Link>
           <Link to="/contact">{translation[language].contact}</Link>
+
+          <Link to="/services">{translation[language].services}</Link>
+          <Link to="/all-team">{translation[language].team}</Link>
+          <Link to="/conatct-us">{translation[language].contact}</Link>
+
         <div className="language_btn">
           <select value={language} onChange={handleLanguageChange}>
             <option value="en">en</option>
@@ -43,7 +48,7 @@ function Header({ language, setLanguage }: HeaderProps) {
         </div>
         </div>
         <div className="call_us">
-          <Link to="/contact">{translation[language].contact}</Link>
+          <Link to="/conatct-us">{translation[language].contact}</Link>
         </div>
         <div className="burger_menu" onClick={toggleMobileMenu}>
           {isMobileMenuOpen ? <FaTimes /> : <FaBars />}

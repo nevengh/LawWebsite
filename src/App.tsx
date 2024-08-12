@@ -10,6 +10,8 @@ import OurTeam from './Pages/OurTeam/OurTeam';
 import Footer from './Components/Footer/Footer';
 import AllLegalServices from './Pages/AllLegalServices/AllLegalServices';
 import OpenLegalService from './Pages/OpenLegalService/OpenLegalService';
+import ContactUS from './Pages/ContactUS/ContactUS';
+
 
 const App: React.FC = () => {
   const [language, setLanguage] = useState<Language>('ar');
@@ -29,11 +31,12 @@ const App: React.FC = () => {
         <Routes>
           <Route path="/" element={<Home language={language} />} />
           <Route path="/about-page" element={<AboutPage language={language} />} />
-          <Route path='/all-team' element={<OurTeam language={language} />} />
           <Route path='/all-legalServices'>
             <Route index element={<AllLegalServices language={language} />} />
             <Route path=":id" element={<OpenLegalService language={language} />} />
           </Route>
+          <Route path='/all-team' element={<OurTeam language={language}/>}/>
+          <Route path='/conatct-us' element={<ContactUS language={language}/>} />
         </Routes>
         <Footer language={language} />
       </BrowserRouter>

@@ -19,13 +19,16 @@
     max-width: 1100px;
     padding: 20px;
     margin: 0 auto;
-    background: var(--primary_color);
+    /* background: var(--primary_color); */
+    color: #d9e0ec;
+    background: linear-gradient(135deg, #0d1120 0%, #3c5a75d2 43%, #0d11207a 100%);
     border-bottom-left-radius:30px ;
     border-top-right-radius:30px ;
 }
 .about_content p{
     font-size: 20px;
-    color: var(--secondary_color);
+    /* color: var(--secondary_color); */
+    color: #d9e0ec;
     line-height: 40px;
 }
 .about_content .second_text{

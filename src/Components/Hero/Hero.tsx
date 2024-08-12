@@ -30,7 +30,7 @@ const Hero: React.FC<HeroProps> = ({ language }) => {
           {translation[language].hero_title}
         </motion.h1>
         <div className="contact_call">
-          <Link to=''>{translation[language].contact_call}</Link>
+          <Link to='/conatct-us'>{translation[language].contact_call}</Link>
         </div>
       </div>
     </div>
