@@ -56,6 +56,8 @@ export interface TranslationStrings {
   team_3_phone: string
   team_2_phone: string
   team_1_phone: string
+  team_4_phone: string
+  team_5_phone: string
   paragraph_footer: string
   mainTitle1_footer: string
   mainTitle2_footer: string
@@ -121,6 +123,9 @@ export interface TranslationStrings {
   form_message: string;
   form_phone: string;
   form_submit:string
+  legal_advice_content:string
+  ShowTeamMember:string
+
 
 }
 
@@ -168,6 +173,9 @@ const translation: Translation = {
     team_3_phone: "+971 55 312 2302 ",
     team_1_phone: "+971 55 987 5671",
     team_2_phone: "+971 58 668 9000",
+    team_4_phone: "+971  06 536 3377 ",
+    team_5_phone: "+971  056 754 7872  ", 
+
     home: "Home",
     about: "About",
     services: "Services",
@@ -181,11 +189,11 @@ const translation: Translation = {
     contact_call: "Contact Us",
     about_title: "About Us",
     why_choose_text_3:
-      "We take the role of the client and act on their behalf at the appropriate time to achieve the best results for them",
+      "We take the role of the client and act on their behalf at the appropriate time to achieve the best results for them .",
     why_choose_text_2:
-      "The members of the Al-Kassadi’s law firm,are distinguished by integrity, diligence,Hardworking, able to assess legal situations, and effective service delivery, which is associated with our competence in finding solutions to any difficulties",
+      "The members of the Al-Kassadi’s law firm,are distinguished by integrity, diligence,Hardworking, able to assess legal situations, and effective service delivery, which is associated with our competence in finding solutions to any difficulties .",
     why_choose_text_1:
-      "Our team has been carefully selected in pursuit of finding the best legal solutions for our clients. Our team is professional, loyal, listener, creative and productive",
+      "Our team has been carefully selected in pursuit of finding the best legal solutions for our clients. Our team is professional, loyal, listener, creative and productive .",
     about_content_1:
       "Our practical history testifies to our continued success in criminal justice and recovery cases. We also have a rich history in commercial cases, civil disputes, personal status cases, and labor cases. We have a distinctive style in understanding and studying all our clients' files, radically different from all traditional methods. We read, understand, comprehend, and innovate to find the best solutions that suit our clients' interests.",
     about_content_2:
@@ -255,6 +263,9 @@ const translation: Translation = {
     showAll: "ShowAll",
     work_time_title: " Working hours",
     conatct_us_info_title: " We can solve all your problems",
+    legal_advice_content:"Need legal advice? Contact us now",
+    ShowTeamMember:"View",
+
   },
   ar: {
     form_submit:"إرسال",
@@ -274,7 +285,7 @@ const translation: Translation = {
     justic_title: "العدالة",
     value_transparency_title: "الشفافية",
     value_transparency_text:
-      "نؤمن بأن التواصل بنزاهة وشفافية هم أساس النجاح في أي علاقة مهنية",
+      " نؤمن بأن التواصل بنزاهة وشفافية هم أساس النجاح في أي علاقة مهنية" ,
     value_Honesty_title: "الصدق والنزاهة",
     value_Honesty_text:
       "ﻧﻌﻤﻞ ﻋﻠﻰ ﺗﻌﺰﻳﺰ ﻗﻴﻢ اﻟﺼﺪق واﻟﻨﺰاﻫﺔ واﻟﺜﻘﺔ ﻓﻲ ﻣﻜﺘﺐ ﻗﻤﺮ اﻟﻜﺴﺎدي ﻟﻠﻤﺤﺎﻣﺎة واﻻﺳﺘﺸﺎرات اﻟﻘﺎﻧﻮﻧﻴﺔ وﻧﺆﻣﻦ اﻳﻤﺎﻧًﺎ راﺳﺨًﺎ ﺑﺄﻫﻤﻴﺔ اﻟﺼﺪق واﻟﺜﻘﺔ واﻹﺣﺘﺮام اﻟﻤﺘﺒﺎدل. ﻛﻤﺎ ﻧﺪرك أﻫﻤﻴﺔ وﺿﺮورة أن ﻳﺸﻌﺮ ﻋﻤﻼﺋﻨﺎ ﺑﺎﻟﺜﻘﺔ وﻟﻬﺬا اﻟﺴﺒﺐ ﻓﺈﻧﻨﺎ ﻧﻀﻊ ﻋﻠﻰ ﻋﺎﺗﻘﻨﺎ ﺗﺤﻤﻞ اﻟﻤﺴﺆوﻟﻴﺔ اﻟﻜﺎﻣﻠﺔ ﻟﺒﻨﺎء اﻟﺜﻘﺔ اﻟﻤﻨﺸﻮدة ﻣﻊ ﻋﻤﻼﺋﻨﺎ واﻟﺤﻔﺎظ ﻋﻠﻴﻬﺎ.",
@@ -293,12 +304,15 @@ const translation: Translation = {
     team_3_name: "أ. ﻗﻤﺮ اﻟﻜﺴﺎدي",
     team_3_info: "ﻣﺤﺎﻣﻲ وﻣﺴﺘﺸﺎر ﻗﺎﻧﻮﻧﻲ/ ﻣﺆﺳﺲ",
     team_4_name: "ﻣﺎﻳــﻚ ﺳﻨﺘﺎوون",
-    team_4_info: "ﻻﺳﺘﻘﺒـــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــﺎل",
+    team_4_info: "اﻻﺳﺘﻘﺒـــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــﺎل",
     team_5_name: "أﺣﻤﺪ ﻧﺎﺟـــــــــــــﻲ",
     team_5_info: "ﺑﺎﺣــــــــــــــــــــــــــــــــــــﺚ ﻗﺎﻧﻮﻧـــــــــــــــــــي",
+
     team_1_phone: "+971 55 987 5671",
     team_3_phone: "+971 55 312 2302 ",
     team_2_phone: "+971 58 668 9000",
+    team_4_phone: "+971  06 536 3377 ",
+    team_5_phone: "+971  056 754 7872  ", 
     home: "الرئيسية",
     about: "من نحن",
     services: "الخدمات",
@@ -379,6 +393,8 @@ const translation: Translation = {
     allLegalServices_mainhead: "خدماتنا القانونية",
     readMore: "اقرأ المزيد",
     showAll: "عرض الكل",
+    legal_advice_content:"   تحتاج الى أستشارة قانونية؟ تواصل معنا الأن",
+    ShowTeamMember:"عرض",
   },
 
 };

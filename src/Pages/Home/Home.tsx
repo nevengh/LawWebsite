@@ -6,8 +6,8 @@ import About from "../About/About";
 import { Link } from "react-router-dom";
 import SectionHeading from "../../Components/SectionHeading/SectionHeading";
 import ServicesSection from "../../Components/ServicesSection/ServicesSection";
-import TeamSection from "../../Components/TeamSectio/TeamSection";
 import translation, {Language,} from "../../Db/translation";
+import SectionTeam from "../../Components/SectionTeam/SectionTeam";
 
 
 interface HomeProps {
@@ -36,9 +36,9 @@ const Home: React.FC<HomeProps> = ({ language }) => {
       >
         <div className="advice_content">
           <div className="center_content_advice">
-            <h1>تحتاج الي أستشارة قانونية؟ تواصل معنا الأن</h1>
+            <h1> {translation[language].legal_advice_content}</h1>
             <div className="contact_call">
-              <Link to="/conatct-us">اتصل بنا</Link>
+              <Link to="/conatct-us"> {translation[language].contact} </Link>
             </div>
           </div>
         </div>
@@ -85,8 +85,8 @@ const Home: React.FC<HomeProps> = ({ language }) => {
 
       {/*
       =========================
-       Our Values
-       =========================
+        Our Values
+      =========================
        */}
       <div className="our_values">
         <SectionHeading
@@ -137,7 +137,7 @@ const Home: React.FC<HomeProps> = ({ language }) => {
       */}
 
       <div className="team_section">
-        <TeamSection language={language} />
+        <SectionTeam language={language} />
         <Link to='all-team' className="show_all">{translation[language].showAll}</Link>
       </div>
 

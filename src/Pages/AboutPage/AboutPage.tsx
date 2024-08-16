@@ -15,7 +15,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ language }) => {
     <div className='AboutPage'>
       <div className="Sections_Hero">
         <div className="hero_text">
-          <motion.h1 
+          <motion.h1
             className='hero_title'
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
@@ -27,68 +27,75 @@ const AboutPage: React.FC<AboutPageProps> = ({ language }) => {
       </div>
 
       {/* About Paragraph */}
-      <motion.div 
+      <motion.div
         className="about_paragrap"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <div className="text_about">
-          <h1>{translation[language].about_title}</h1>
-          <p>{translation[language].text_about}</p>
+        <div className='SectionAboutOne'>
+          <div className="text_about">
+            <h1>{translation[language].about_title}</h1>
+            <p>{translation[language].text_about}</p>
+          </div>
+          <div className='IMAGE_about'>
+            <img src={about_img} alt="About Us" />
+          </div>
         </div>
-        <img src={about_img} alt="About Us" />
+
+
       </motion.div>
 
       {/* About Services Section */}
-      <motion.div 
+      <motion.div
         className="about_services_section"
-        initial={{ opacity: 0, y: 20 }} 
-        whileInView={{ opacity: 1, y: 0 }} 
-        transition={{ duration: 0.5 }} 
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
       >
-        <motion.div 
+        <motion.div
           className="about_services_text"
-          initial={{ opacity: 0, x: -20 }} 
-          whileInView={{ opacity: 1, x: 0 }} 
-          transition={{ duration: 0.5 }} 
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5 }}
         >
           <h1>{translation[language].about_services_title}</h1>
           <p>{translation[language].about_services}</p>
         </motion.div>
-        
-        <motion.img 
-          src={about_services} 
+
+        <motion.img
+       
+          src={about_services}
           alt="About Services"
-          initial={{ opacity: 0, x: 20 }} 
-          whileInView={{ opacity: 1, x: 0 }} 
-          transition={{ duration: 0.5 }} 
+          initial={{ opacity: 0, x: 20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5 }}
         />
       </motion.div>
 
       {/* Our Partner Section */}
-      <motion.div 
+      <motion.div
         className="our_partner"
-        initial={{ opacity: 0, y: 20 }} 
-        whileInView={{ opacity: 1, y: 0 }} 
-        transition={{ duration: 0.5 }} 
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
       >
-        <motion.div 
+        <motion.div
           className="our_partner_text"
-          initial={{ opacity: 0, x: -20 }} 
-          whileInView={{ opacity: 1, x: 0 }} 
-          transition={{ duration: 0.5 }} 
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5 }}
         >
           <h1>{translation[language].our_partner_title}</h1>
           <p>{translation[language].our_partner}</p>
         </motion.div>
-        
-        <motion.img 
-          src={our_partner} 
+
+        <motion.img
+          src={our_partner}
           alt="Our Partner"
-          initial={{ opacity: 0, x: 20 }} 
-          whileInView={{ opacity: 1, x: 0 }} 
-          transition={{ duration: 0.5 }} 
+          initial={{ opacity: 0, x: 20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5 }}
         />
       </motion.div>
 

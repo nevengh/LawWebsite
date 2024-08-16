@@ -79,12 +79,12 @@ export const legalServices : LegalService[] =[
     {
         id: 4,
         serviceName: 'service_4_name',
-        firstDescription:'service_4_contentDescription1',
+        firstDescription:'service_4_contentDescription2',
         contents: [
             {
                 id: 1,
                 serviceid: 4,
-                description: 'service_4_contentDescription2',
+                description: 'service_4_contentDescription1',
             },
             {
                 id: 2,
@@ -96,7 +96,7 @@ export const legalServices : LegalService[] =[
     {
         id: 5,
         serviceName: 'service_5_name',
-        firstDescription:'service_5_contentDescription1',
+        firstDescription:'service_5_contentDescription3',
         contents: [
             {
                 id: 1,
@@ -106,19 +106,19 @@ export const legalServices : LegalService[] =[
             {
                 id: 2,
                 serviceid: 5,
-                description:'service_5_contentDescription3',
+                description:'service_5_contentDescription1',
             }
         ],
     },
     {
         id: 6,
         serviceName: 'service_6_name',
-        firstDescription:'service_6_contentDescription1',
+        firstDescription:'service_6_contentDescription2',
         contents: [
             {
                 id: 1,
                 serviceid: 6,
-                description: 'service_6_contentDescription2',
+                description: 'service_6_contentDescription1',
             },
             {
                 id: 2,
@@ -135,7 +135,7 @@ export const legalServices : LegalService[] =[
     {
         id: 7,
         serviceName: 'service_7_name',
-        firstDescription:'service_7_contentDescription1',
+        firstDescription:'service_7_contentDescription5',
         contents: [
             {
                 id: 1,
@@ -155,7 +155,7 @@ export const legalServices : LegalService[] =[
             {
                 id: 4,
                 serviceid: 7,
-                description:'service_7_contentDescription5',
+                description:'service_7_contentDescription1',
             },
         ],
     }

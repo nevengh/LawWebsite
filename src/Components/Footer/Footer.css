@@ -1,15 +1,23 @@
 .Footer {
-   
     background: linear-gradient(135deg, #0d1120 0%, #3c5a75d2 43%, #0d11207a 100%);
     width: 100%;
     padding: 50px 20px 50px 20px;
     margin-top: 50px;
-
 }
+
+.en .Footer {
+    background: linear-gradient(135deg, #363c55 0%, #3c5a75d2 43%, #0d11207a 100%);
+}
+
 
 .Footer .HJ_ContainerFooter {
     display: flex;
     gap: 15%;
+}
+
+.en .Footer .HJ_ContainerFooter {
+    display: flex;
+    gap: 12%;
 }
 
 .Footer .HJ_ContainerFooter .HJ_PartDetails {
@@ -26,7 +34,7 @@
 
 .Footer .HJ_ContainerFooter .HJ_PartDetails .HJ_parahraph {
     width: 500.5px;
-    font-size: 16px;
+    font-size: 15px;
     color: #d9e0ec;
 }
 
@@ -40,7 +48,7 @@
 
 .Footer .HJ_ContainerFooter .HJ_PartTitles .HJ_Links span {
     color: #d9e0ec;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .Footer .HJ_ContainerFooter .HJ_AllServices {
@@ -53,7 +61,7 @@
 
 .Footer .HJ_ContainerFooter .HJ_AllServices span {
     color: #d9e0ec;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .Footer .HJ_ContainerFooter .HJ_MainTitle {
@@ -68,6 +76,10 @@
     justify-content: space-between;
     align-items: flex-start;
     gap: 180px;
+}
+
+.en .HJ_ContainerSectionFooter {
+    gap: 135px;
 }
 
 .social_side .Icon {
@@ -86,12 +98,20 @@
         gap: 8%;
     }
 
-    .HJ_PartServices {
+
+    .en .HJ_ContainerSectionFooter {
+        gap: 108px;
+    }
+
+    .ar .HJ_PartServices {
         width: 244px;
     }
 
 
+
+
 }
+
 @media screen and (max-width : 997px) and (min-width : 993px) {
     .HJ_ContainerSectionFooter {
         display: flex;
@@ -101,12 +121,88 @@
         gap: 2%;
     }
 
+    .en .HJ_ContainerSectionFooter {
+        gap: 2%;
+    }
+
     .HJ_PartServices {
         width: 244px;
     }
 
 
 }
+
+@media screen and (max-width : 1100px) and (min-width : 1076px) {
+    .HJ_ContainerSectionFooter {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 2%;
+    }
+
+    .en .HJ_ContainerSectionFooter {
+        gap: 8%;
+    }
+
+    .en .Footer .HJ_ContainerFooter {
+        display: flex;
+        gap: 9%;
+    }
+
+    .en .HJ_PartServices {
+        width: 255px;
+    }
+
+    .en .HJ_PartServices span {
+        width: 276px;
+    }
+    .en .Footer .HJ_ContainerFooter .HJ_PartDetails .HJ_parahraph {
+        font-size: 15px;
+    }
+    .en .Footer .HJ_ContainerFooter .HJ_PartTitles .HJ_Links span {
+        font-size: 15px;
+    }
+
+
+}
+
+@media screen and (max-width : 1075px) and (min-width : 993px) {
+    .HJ_ContainerSectionFooter {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 2%;
+    }
+
+    .en .HJ_ContainerSectionFooter {
+        gap: 8%;
+    }
+
+    .en .Footer .HJ_ContainerFooter {
+        display: flex;
+        gap: 9%;
+    }
+
+    .en .Footer .HJ_ContainerFooter .HJ_AllServices span {
+        color: #d9e0ec;
+        font-size: 12px;
+    }
+
+    .HJ_PartServices {
+        width: 253px;
+    }
+    .en .Footer .HJ_ContainerFooter .HJ_PartDetails .HJ_parahraph {
+        font-size: 12px;
+    }
+    .en  .Footer .HJ_ContainerFooter .HJ_PartTitles .HJ_Links span {
+        font-size: 12px;
+    }
+
+
+}
+
 
 
 @media screen and (max-width : 992px) {
@@ -123,6 +219,12 @@
         justify-content: flex-start;
         align-items: flex-start;
         gap: 50%;
+    }
+/*     .en .HJ_ContainerSectionFooter {
+        gap: 10%;
+    } */
+    .en .HJ_ContainerSectionFooter {
+        gap: 40%;
     }
 
     .Footer .HJ_ContainerFooter .HJ_MainTitle {
@@ -144,7 +246,7 @@
 
     .Footer .HJ_ContainerFooter .HJ_AllServices span {
         font-size: 20px;
-        
+
     }
 
 }
@@ -160,6 +262,11 @@
     .HJ_ContainerSectionFooter {
         margin-top: 40px;
         gap: 20%;
+    }
+
+    .en .HJ_ContainerSectionFooter {
+        margin-top: 40px;
+        gap: 15%;
     }
 
     .Footer .HJ_ContainerFooter .HJ_MainTitle {

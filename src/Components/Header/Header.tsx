@@ -38,8 +38,8 @@ function Header({ language, setLanguage }: HeaderProps) {
 
         <div className="language_btn">
           <select value={language} onChange={handleLanguageChange}>
-            <option value="en">en</option>
-            <option value="ar">ar</option>
+            <option value="en">english</option>
+            <option value="ar">arabic</option>
           </select>
         </div>
         </div>

@@ -1,7 +1,6 @@
 .ServiceCard {
     width: 350px;
     padding: 20px;
-    max-height:100%;
     position: relative;
     border-radius: 15px;
     /* Add border radius */
@@ -12,19 +11,35 @@
     flex-direction: column;
     align-items: center;
 }
-
+.en .ServiceCard {
+    height: 280px;
+}
+.ar .ServiceCard {
+    height: 220px;
+}
 .ServiceCard:hover {
     border: 1px solid rgba(0, 0, 0, 0.2);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.522);
 }
-.ServiceCard h2{
+
+.en .ServiceCard h2{
+    font-size: 16px;
+    color: var(--primary_color);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.ar .ServiceCard h2{
     font-size: 22px;
     color: var(--primary_color);
     font-weight: bold;
     margin-bottom: 20px;
 }
-.ServiceCard p{
+.en .ServiceCard p{
     font-size: 16px;
+    color: var(--primary_color);
+}
+.en .ServiceCard p{
+    font-size: 14px;
     color: var(--primary_color);
 }
 .HJ_ReadMore{

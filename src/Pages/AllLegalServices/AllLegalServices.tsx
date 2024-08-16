@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import ServiceCard from '../../Components/ServiceCard/ServiceCard';
 import { LegalService, legalServices } from '../../Db/LegalServices';
 
+
 interface AllLegalServicesProps {
     language: Language;
 }
