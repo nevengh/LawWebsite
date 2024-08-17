@@ -1,0 +1,60 @@
+.HJ_teamMemberDetails{
+    margin: 20px;
+}
+.HJ_teamMemberDetails .imageTeamMember{
+    width: 400px;
+    background-color: white;
+    border: 3px solid rgb(59, 59, 121);
+    padding: 10px;
+    
+}
+.HJ_teamMemberDetails .imageTeamMember img{
+    width: 350px;
+}
+.HJ_teamMemberDetails h2{
+    font-size: 30px;
+    color: var(--primary_color);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.HJ_teamMemberDetails p{
+    font-size: 20px;
+    color: var(--primary_color);
+    margin-bottom: 10px;
+    direction: ltr;
+}
+
+.HJ_ContainerTeamWorkMember .HJ_contentTeamWork{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.HJ_ContainerTeamWorkMember{
+    display: flex;
+    gap: 25%;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+@media(max-width:992px) {
+    .HJ_ContainerTeamWorkMember{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    .HJ_teamMemberDetails .imageTeamMember{
+        width: 300px;
+        padding: 10px;
+        
+    }
+    .HJ_teamMemberDetails .imageTeamMember img{
+        width: 250px;
+    }
+}

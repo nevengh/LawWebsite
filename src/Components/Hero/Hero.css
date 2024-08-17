@@ -33,6 +33,10 @@
     /* line-height: 40px; */
 
 }
+.en .hero_title{
+    font-size: 50px;
+}
+
 .hero_text .contact_call
 {
     width: 200px;

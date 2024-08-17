@@ -1,5 +1,4 @@
 .TopBanner {
-
     padding: 15px 30px;
     display: flex;
     justify-content: space-between;
@@ -42,6 +41,9 @@
     transition: .3s;
 }
 
+.en .TopBanner .contact_side .info a{
+    font-size: 14px;
+}
 
 @media (max-width: 768px) {
     .TopBanner {

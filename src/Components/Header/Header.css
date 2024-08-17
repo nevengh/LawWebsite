@@ -6,7 +6,10 @@
     position: sticky;
     top: 0;
     z-index: 999;
-    background-color: white;
+    background: linear-gradient(135deg, #909abd 0%, #96badbd2 43%, #1e1f227a 100%);
+}
+.en .navbar {
+    padding: 0.5rem 3rem;
 }
 .logo img{
     width: 60px;
@@ -23,12 +26,21 @@
     color: var(--primary_color);
     font-weight: 500;
 }
+.en .menu a {
+    font-size: 19px;
+    color: var(--primary_color);
+    font-weight: 500;
+}
 
 /* Call Us Button */
 .call_us {
     padding: 10px 20px;
     background: var(--primary_color);
 }
+.en .call_us a{
+    font-size: 14px;
+}
+
 
 /* Mobile Menu Styles */
 .burger_menu {
@@ -52,7 +64,6 @@
 /* Responsive Styles */
 @media (max-width: 768px) {
     .navbar{
-        justify-content: space-around;
         position: fixed;
         z-index: 999;
         width: 100%;

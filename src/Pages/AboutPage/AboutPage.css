@@ -1,7 +1,7 @@
-.Sections_Hero{
+.Sections_Hero {
     width: 100%;
     height: 70vh;
-    border-bottom-left-radius:170px ;
+    border-bottom-left-radius: 170px;
     background-image: url(../../assets/images/about_page.webp);
     background-position: center;
     background-repeat: no-repeat;
@@ -9,40 +9,64 @@
     background-attachment: fixed;
     position: relative;
 }
-.Sections_Hero::before{
+
+.Sections_Hero::before {
     content: '';
     position: absolute;
-    border-bottom-left-radius:170px ;
+    border-bottom-left-radius: 170px;
     width: 100%;
     height: 100%;
     background: #3c5a75bf;
 }
 
-.about_paragrap{
-    margin-top: 100px;
+.about_paragrap {
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 100px;
     flex-wrap: wrap;
 }
-.about_paragrap img {
-    width: 600px;
-    height: 400px; /* Adjust height for the ellipse effect */
-    clip-path: ellipse(50% 70% at 50% 50%); /* Clip to an ellipse */
+
+.SectionAboutOne {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 50px;
+    margin-top: 20px;
 }
 
-.text_about h1{
-    color: var(--secondary_color);
+.SectionAboutOne .IMAGE_about {
+    width: 40%;
+}
+
+.en .SectionAboutOne .IMAGE_about {
+    width: 40%;
+}
+
+.SectionAboutOne .IMAGE_about img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.SectionAboutOne .text_about {
+    width: 50%;
+}
+
+.SectionAboutOne .text_about h1 {
+    color: var(--primary_color);
     font-size: 45px;
     /* text-decoration: underline; */
     margin-bottom: 10px;
     padding-bottom: 5px;
     width: max-content;
-    border-bottom: 5px solid var(--secondary_color);
+    border-bottom: 5px solid var(--primary_color);
 
 }
-.text_about p{
+
+.SectionAboutOne .text_about p {
     font-size: 22px;
     line-height: 30px;
     color: var(--primary_color);
@@ -50,36 +74,51 @@
     font-weight: 600;
 }
 
-.about_services_section,.our_partner{
-    margin-top: 120px;
+.about_services_section,
+.our_partner {
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    padding-inline: 50px;
+    margin-top: 50px;
     position: relative;
 }
 
-.about_services_section img,.our_partner img{
-    height: 400px;
-    
+.about_services_section {
+    flex-direction: row-reverse;
 }
-.about_services_text{
-    border-top-right-radius:70px ;
-    padding: 50px 10px;
-    background: #b0976fad;
-    position: absolute;
-    z-index: 5;
-    right: 10%;
+
+.about_services_section img,
+.our_partner img {
+    width: 40%;
+    height: 350px;
+    object-fit: cover;
 }
-.our_partner_text{
-    padding: 50px 10px;
-    background: #b0976fad;
-    position: absolute;
-    z-index: 5;
-    left: 10%;
-    border-top-left-radius:70px ;
+
+.about_services_text {
+    width: 50%;
 }
-.about_services_text h1,.our_partner h1{
+
+.our_partner_text {
+    width: 50%;
+}
+
+.en .about_services_section img,
+.our_partner img {
+    width: 40%;
+    height: 550px;
+    object-fit: cover;
+}
+
+.en .SectionAboutOne .IMAGE_about img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+}
+
+.about_services_text h1,
+.our_partner h1 {
     font-size: 35px;
     color: var(--primary_color);
     /* text-decoration: underline; */
@@ -88,7 +127,9 @@
     width: 280px;
     margin-bottom: 10px;
 }
-.about_services_text p,.our_partner p{
+
+.about_services_text p,
+.our_partner p {
     max-width: 600px;
     font-size: 20px;
     color: var(--primary_color);
@@ -96,14 +137,15 @@
     font-weight: 600;
 }
 
-.our_work{
+.our_work {
     margin-top: 120px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.our_work h1{
+
+.our_work h1 {
     font-size: 40px;
     color: var(--primary_color);
     padding-bottom: 5px;
@@ -111,7 +153,12 @@
     width: 300px;
     text-align: center;
 }
-.our_work_con{
+
+.en .our_work h1 {
+    font-size: 32px;
+}
+
+.our_work_con {
     margin-top: 50px;
     display: flex;
     justify-content: center;
@@ -119,68 +166,151 @@
     gap: 30px;
     flex-wrap: wrap;
 }
+
 .our_work_card {
     width: 300px;
-    height: 300px;
+    height: 250px;
     padding: 20px;
-    background: #b0976fad;
+    background: linear-gradient(135deg, #737fa9 0%, #bfcad5d2 43%, #2d31407a 100%);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 8px;
 }
 
-.our_work_card h2{
-    color:var(--primary_color);
+.en .our_work_card {
+    height: 320px;
+}
+
+.our_work_card h2 {
+    color: var(--primary_color);
     border-bottom: 5px solid var(--primary_color);
     padding-bottom: 3px;
     width: max-content;
     margin-bottom: 15px;
+    font-size: 22px;
 }
-.our_work_card p{
+
+.our_work_card p {
     color: var(--primary_color);
     font-size: 16px;
 }
 
 
 
+@media(max-width:992px) {
 
-@media(max-width:767px){
-    .about_services_section img,.our_partner img{
-        width: 80% !important;
-    }
-    .about_services_text h1,.our_partner_text h1{
-        text-align: center;
-        margin: 30px auto;
-    }
-    .about_services_text p,.our_partner_text p{
-       width: 100% !important;
-       text-align: center;
-       font-size: 14px;
-       line-height: 23px;
-       margin: 0 auto;
-    }
-    .about_services_text,.our_partner_text{
-        border-top-right-radius:0 ;
-        border-top-left-radius:0 ;
-        height: 100%;
-        
-        padding: 30px 20px;
-        max-width: 400px !important;
-        background: #b0976fad;
-    }
-    .about_paragrap img{
+    .about_paragrap img {
         width: 400px;
     }
+
+    .SectionAboutOne {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+        align-items: center;
+        padding-inline: 20px;
+        margin-top: 20px;
+    }
+
+    .SectionAboutOne .text_about {
+        width: 100%;
+
+    }
+
+    .SectionAboutOne .IMAGE_about {
+        width: 100%;
+    }
+
+    .about_services_section,
+    .our_partner {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+        align-items: center;
+        padding-inline: 20px;
+    }
+
+    .about_services_section img,
+    .our_partner img {
+        width: 100%;
+    }
+
+    .about_services_text {
+        width: 100%;
+    }
+
+    .our_partner_text {
+        width: 100%;
+    }
+
+    .about_services_text p,
+    .our_partner p {
+        max-width: 80%;
+        font-size: 16px;
+    }
+
+    .SectionAboutOne .text_about p {
+        font-size: 16px;
+        max-width: 80%;
+    }
+    .en .about_services_section img,
+    .our_partner img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+    }
+    .en .SectionAboutOne .IMAGE_about {
+        width: 100%;
+    }
+    
+    .en .SectionAboutOne .IMAGE_about img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+    }
+
 }
 
-@media(max-width:500px){
-    .our_work_card h2{
+@media(max-width:576px) {
+
+    .about_services_text p,
+    .our_partner p {
+        font-size: 14px;
+    }
+
+    .SectionAboutOne .text_about p {
+        font-size: 14px;
+    }
+
+    .about_services_text h1,
+    .our_partner h1 {
+        font-size: 25px;
+    }
+
+    .SectionAboutOne .text_about h1 {
+        font-size: 25px;
+    }
+
+    .en .about_services_section img,
+    .our_partner img {
+        width: 100%;
+        height: 550px;
+        object-fit: cover;
+    }
+    .en .SectionAboutOne .IMAGE_about {
+        width: 100%;
+    }
+    
+    .en .SectionAboutOne .IMAGE_about img {
+        width: 100%;
+        height: 550px;
+        object-fit: cover;
+    }
+
+    .our_work_card h2 {
         width: fit-content;
-    }
-    .text_about p {
-        font-size: 18px;
-        text-align: center;
-    }
-    .text_about h1{
-        margin: 30px auto;
     }
 }

@@ -1,6 +1,6 @@
 .TeamCard {
     width: 300px;
-    height: 420px;
+    height: 440px;
     position: relative;
     border-radius: 15px; /* Add border radius */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add box shadow */
@@ -41,6 +41,11 @@
     align-items: center;
     gap: 10px;
     color: var(--secondary_color);
+    direction: ltr;
+}
+.en .TeamCard p{
+    display: flex;
+    flex-direction: row-reverse;
 }
 .TeamCard p span{
     color: var(--primary_color);

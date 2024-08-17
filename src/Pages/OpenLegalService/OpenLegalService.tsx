@@ -4,7 +4,8 @@ import translation, { Language } from '../../Db/translation';
 import { Link, useParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { getServiceDetails } from '../../Db/getServicesWithTranslation';
-import TeamSection from '../../Components/TeamSectio/TeamSection';
+import SectionTeam from '../../Components/SectionTeam/SectionTeam';
+
 
 
 
@@ -29,7 +30,7 @@ const OpenLegalService: React.FC<OpenLegalServiceProps> = ({ language }) => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5 }}
                     >
-                        {serviceDetails?.serviceName} / <Link to='/all-legalServices'>{translation[language].allLegalServices_mainhead}</Link>
+                        {serviceDetails?.serviceName}
                     </motion.h1>
                 </div>
             </div>
@@ -45,7 +46,7 @@ const OpenLegalService: React.FC<OpenLegalServiceProps> = ({ language }) => {
             </div>
 
             <div>
-                <TeamSection language={language} />
+                <SectionTeam language={language} />
             </div>
 
 

@@ -3,14 +3,14 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Header from './Components/Header/Header';
 import Home from './Pages/Home/Home';
-// import OurTeam from './Pages/OurTeam/OurTeam';
 import { Language } from './Db/translation';
 import AboutPage from './Pages/AboutPage/AboutPage';
-import OurTeam from './Pages/OurTeam/OurTeam';
 import Footer from './Components/Footer/Footer';
 import AllLegalServices from './Pages/AllLegalServices/AllLegalServices';
 import OpenLegalService from './Pages/OpenLegalService/OpenLegalService';
 import ContactUS from './Pages/ContactUS/ContactUS';
+import OpenAllTeamMembers from './Pages/OpenAllTeamMembers/OpenAllTeamMembers';
+import AllTeamMembers from './Pages/AllTeamMembers/AllTeamMembers';
 
 
 const App: React.FC = () => {
@@ -18,7 +18,7 @@ const App: React.FC = () => {
   const direction = language === 'ar' ? 'rtl' : 'ltr';
 
 
-  useEffect(() => {
+  useEffect(() => { 
     document.body.dir = direction; // Set the direction of the body
     document.body.className = language === 'en' ? 'en' : 'ar'; // Set class for language
   }, [direction, language]);
@@ -35,7 +35,11 @@ const App: React.FC = () => {
             <Route index element={<AllLegalServices language={language} />} />
             <Route path=":id" element={<OpenLegalService language={language} />} />
           </Route>
-          <Route path='/all-team' element={<OurTeam language={language}/>}/>
+          <Route path='/all-team'>
+            <Route index element={<AllTeamMembers language={language}/>} />
+            <Route path=":id" element={<OpenAllTeamMembers language={language} />} />
+          </Route>
+
           <Route path='/conatct-us' element={<ContactUS language={language}/>} />
         </Routes>
         <Footer language={language} />
