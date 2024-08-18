@@ -16,9 +16,8 @@ const AboutPage: React.FC<AboutPageProps> = ({ language }) => {
     <div className='AboutPage'>
 
       <SeoComponnent
-        title="About Page"
+        title=" Al Kassadi About Page"
         description="This page contains information about our website and its purpose."
-        name="About"
         type="website"
       />
 
