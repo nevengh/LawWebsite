@@ -42,6 +42,7 @@ const ContactUS: React.FC<ContactProps> = ({ language }) => {
      const map ="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3607.0609464668028!2d55.36490247494584!3d25.302156327442166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5c785ad1227b%3A0x4b873618560e813d!2sQamar%20Al%20Kassadi%20Advocates%20%26%20Legal%20Consultants!5e0!3m2!1sen!2s!4v1723213060571!5m2!1sen!2s"
   return (
     <div className='ContactUS'>
+
         <div className="Sections_Hero">
         <div className="hero_text">
           <motion.h1 

@@ -6,8 +6,10 @@ import About from "../About/About";
 import { Link } from "react-router-dom";
 import SectionHeading from "../../Components/SectionHeading/SectionHeading";
 import ServicesSection from "../../Components/ServicesSection/ServicesSection";
-import translation, {Language,} from "../../Db/translation";
+import translation, { Language, } from "../../Db/translation";
 import SectionTeam from "../../Components/SectionTeam/SectionTeam";
+import SeoComponnent from "../../Components/SeoComponnent/SeoComponnent";
+
 
 
 interface HomeProps {
@@ -20,6 +22,14 @@ const Home: React.FC<HomeProps> = ({ language }) => {
 
   return (
     <div>
+      <SeoComponnent
+        title="Home Page"
+        description="The home page of the site, which initially appears when you open it, includes the basic sections for describing the site."
+        name="Home"
+        type="website"
+      />
+
+
       <Hero language={language} />
       <About language={language} />
       {/*

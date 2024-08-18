@@ -4,7 +4,8 @@ import translation, { Language } from '../../Db/translation';
 import { Link } from 'react-router-dom';
 import about_img from '../../assets/images/about_img.webp';
 import about_services from '../../assets/images/about_services.webp';
-import our_partner from '../../assets/images/our_partners.webp';
+import our_partner from '../../assets/images/our_partners.webp'
+import SeoComponnent from '../../Components/SeoComponnent/SeoComponnent';
 
 interface AboutPageProps {
   language: Language;
@@ -13,6 +14,14 @@ interface AboutPageProps {
 const AboutPage: React.FC<AboutPageProps> = ({ language }) => {
   return (
     <div className='AboutPage'>
+
+      <SeoComponnent
+        title="About Page"
+        description="This page contains information about our website and its purpose."
+        name="About"
+        type="website"
+      />
+
       <div className="Sections_Hero">
         <div className="hero_text">
           <motion.h1
@@ -64,7 +73,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ language }) => {
         </motion.div>
 
         <motion.img
-       
+
           src={about_services}
           alt="About Services"
           initial={{ opacity: 0, x: 20 }}
