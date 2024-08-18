@@ -23,9 +23,8 @@ const Home: React.FC<HomeProps> = ({ language }) => {
   return (
     <div>
       <SeoComponnent
-        title="Home Page"
+        title="Al Kassadi Home Page"
         description="The home page of the site, which initially appears when you open it, includes the basic sections for describing the site."
-        name="Home"
         type="website"
       />
 

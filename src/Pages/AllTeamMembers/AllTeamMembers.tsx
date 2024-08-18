@@ -32,9 +32,8 @@ const AllTeamMembers: React.FC<AllTeamMembersProps> = ({ language }) => {
     return (
         <div>
             <SeoComponnent
-                title="Team Members Page"
+                title=" Al Kassadi Team Members Page"
                 description="A specialized page that displays the best lawyers in the company."
-                name="Team Members"
                 type="website"
             />
             <div className="Sections_Hero">

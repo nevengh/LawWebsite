@@ -4,7 +4,6 @@ import { Helmet } from 'react-helmet-async'
 interface SeoComponentProps {
     title: string;
     description: string;
-    name: string; 
     type: string;
 }
 

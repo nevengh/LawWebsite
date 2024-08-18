@@ -15,9 +15,8 @@ const AllLegalServices: React.FC<AllLegalServicesProps> = ({ language }) => {
     return (
         <div className='AllLegalServices'>
             <SeoComponnent
-                title="LegalServices Page"
+                title=" Al Kassadi LegalServices Page"
                 description="A specialized page displaying all the services that can be provided by the company"
-                name="LegalServices"
                 type="website"
             />
 
