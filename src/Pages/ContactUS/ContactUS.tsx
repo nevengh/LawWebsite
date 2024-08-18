@@ -9,31 +9,35 @@ interface ContactProps{
 }
 const ContactUS: React.FC<ContactProps> = ({ language }) => {
 
-    const form = useRef();
+  const form = useRef<HTMLFormElement | null>(null);
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-    emailjs
-      .sendForm(
-        "service_qnz4n1e",
-        "template_9snqi76",
-        form.current,
-        "Dhw_22hh8etdn_F7B"
-      )
-      .then(
-        (response) => {
-          console.log(response);
-          alert("Email sent successfully");
-          
-          e.target.reset();
-        },
-        (error) => {
-          console.log(error);
-          alert("Something went wrong");
-        }
-      );
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+      e.preventDefault();
+      
+      // Ensure form.current is not null before calling sendForm
+      if (form.current) {
+          emailjs
+              .sendForm(
+                  "service_qnz4n1e",
+                  "template_9snqi76",
+                  form.current,
+                  "Dhw_22hh8etdn_F7B"
+              )
+              .then(
+                  (response) => {
+                      console.log(response);
+                      alert("Email sent successfully");
+                      e.currentTarget.reset(); // Reset the form after submission
+                  },
+                  (error) => {
+                      console.log(error);
+                      alert("Something went wrong");
+                  }
+              );
+      } else {
+          alert("Form reference is not available.");
+      }
   };
-
 
      const map ="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3607.0609464668028!2d55.36490247494584!3d25.302156327442166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5c785ad1227b%3A0x4b873618560e813d!2sQamar%20Al%20Kassadi%20Advocates%20%26%20Legal%20Consultants!5e0!3m2!1sen!2s!4v1723213060571!5m2!1sen!2s"
   return (
