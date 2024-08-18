@@ -1,7 +1,7 @@
 import React from 'react'
 import './OpenLegalService.css'
 import translation, { Language } from '../../Db/translation';
-import { Link, useParams } from 'react-router-dom';
+import {  useParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { getServiceDetails } from '../../Db/getServicesWithTranslation';
 import SectionTeam from '../../Components/SectionTeam/SectionTeam';

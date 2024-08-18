@@ -13,12 +13,13 @@ import OpenAllTeamMembers from './Pages/OpenAllTeamMembers/OpenAllTeamMembers';
 import AllTeamMembers from './Pages/AllTeamMembers/AllTeamMembers';
 
 
+
 const App: React.FC = () => {
   const [language, setLanguage] = useState<Language>('ar');
   const direction = language === 'ar' ? 'rtl' : 'ltr';
 
 
-  useEffect(() => { 
+  useEffect(() => {
     document.body.dir = direction; // Set the direction of the body
     document.body.className = language === 'en' ? 'en' : 'ar'; // Set class for language
   }, [direction, language]);
@@ -27,22 +28,22 @@ const App: React.FC = () => {
 
     <div className={`app ${direction}`}>
       <BrowserRouter basename='/LawWebsite/'>
-        <Header language={language} setLanguage={setLanguage} />
-        <Routes>
-          <Route path="/" element={<Home language={language} />} />
-          <Route path="/about-page" element={<AboutPage language={language} />} />
-          <Route path='/all-legalServices'>
-            <Route index element={<AllLegalServices language={language} />} />
-            <Route path=":id" element={<OpenLegalService language={language} />} />
-          </Route>
-          <Route path='/all-team'>
-            <Route index element={<AllTeamMembers language={language}/>} />
-            <Route path=":id" element={<OpenAllTeamMembers language={language} />} />
-          </Route>
+          <Header language={language} setLanguage={setLanguage} />
+          <Routes>
+            <Route path="/" element={<Home language={language} />} />
+            <Route path="/about-page" element={<AboutPage language={language} />} />
+            <Route path='/all-legalServices'>
+              <Route index element={<AllLegalServices language={language} />} />
+              <Route path=":id" element={<OpenLegalService language={language} />} />
+            </Route>
+            <Route path='/all-team'>
+              <Route index element={<AllTeamMembers language={language} />} />
+              <Route path=":id" element={<OpenAllTeamMembers language={language} />} />
+            </Route>
 
-          <Route path='/conatct-us' element={<ContactUS language={language}/>} />
-        </Routes>
-        <Footer language={language} />
+            <Route path='/conatct-us' element={<ContactUS language={language} />} />
+          </Routes>
+          <Footer language={language} />
       </BrowserRouter>
     </div>
   );

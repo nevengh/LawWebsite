@@ -4,6 +4,7 @@ import './AllLegalServices.css'
 import { motion } from 'framer-motion';
 import ServiceCard from '../../Components/ServiceCard/ServiceCard';
 import { LegalService, legalServices } from '../../Db/LegalServices';
+import SeoComponnent from '../../Components/SeoComponnent/SeoComponnent';
 
 
 interface AllLegalServicesProps {
@@ -13,6 +14,13 @@ interface AllLegalServicesProps {
 const AllLegalServices: React.FC<AllLegalServicesProps> = ({ language }) => {
     return (
         <div className='AllLegalServices'>
+            <SeoComponnent
+                title="LegalServices Page"
+                description="A specialized page displaying all the services that can be provided by the company"
+                name="LegalServices"
+                type="website"
+            />
+
             <div className="Sections_Hero">
                 <div className="hero_text">
                     <motion.h1
