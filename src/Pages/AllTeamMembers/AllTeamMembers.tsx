@@ -33,6 +33,7 @@ const AllTeamMembers: React.FC<AllTeamMembersProps> = ({ language }) => {
         <div>
             <SeoComponnent
                 title=" Al Kassadi Team Members Page"
+                keyword=" EXECUTIVE DIRECTOR / CEO , RECEPTIONIST, LEGAL CONSULTANT , اﻟﻤﺪﻳﺮ اﻟﺘﻨﻔﻴﺬي / اﻟﺮﺋﻴﺲ اﻟﺘﻨﻔﻴﺬي , مستشار ﻗﺎﻧﻮني  , الاستقبال"
                 description="A specialized page that displays the best lawyers in the company."
                 type="website"
             />

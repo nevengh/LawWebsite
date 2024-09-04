@@ -24,6 +24,8 @@ const Home: React.FC<HomeProps> = ({ language }) => {
     <div>
       <SeoComponnent
         title="Al Kassadi Home Page"
+        keyword="استشارة قانونية , Legal advice ,  محامون  , Lawyers ,  خدمات قانونية , Legal services"
+
         description="The home page of the site, which initially appears when you open it, includes the basic sections for describing the site."
         type="website"
       />
