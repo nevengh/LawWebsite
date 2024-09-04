@@ -17,6 +17,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ language }) => {
 
       <SeoComponnent
         title=" Al Kassadi About Page"
+        keyword=" Who we are ? , What we offer? , Our partners , من نحن  , ماذا نقدم  , شركاؤنا"
         description="This page contains information about our website and its purpose."
         type="website"
       />

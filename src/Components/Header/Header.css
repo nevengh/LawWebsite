@@ -6,7 +6,7 @@
     position: sticky;
     top: 0;
     z-index: 999;
-    background: linear-gradient(135deg, #909abd 0%, #96badbd2 43%, #1e1f227a 100%);
+    background: linear-gradient(135deg, #4c5e9c 0%, #2d75b8d2 43%, #1e1f227a 100%);
 }
 .en .navbar {
     padding: 0.5rem 3rem;

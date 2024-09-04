@@ -45,6 +45,7 @@ const ContactUS: React.FC<ContactProps> = ({ language }) => {
     <div className='ContactUS'>
       <SeoComponnent
         title="Al Kassadi ContactUS Page"
+        keyword="البريد الالكتروني , رقم الهاتف , Email , Phone number"
         description="A specialized page that displays contact information with the company."
         type="website"
       />

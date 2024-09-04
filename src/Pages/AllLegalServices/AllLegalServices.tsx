@@ -16,6 +16,7 @@ const AllLegalServices: React.FC<AllLegalServicesProps> = ({ language }) => {
         <div className='AllLegalServices'>
             <SeoComponnent
                 title=" Al Kassadi LegalServices Page"
+                keyword="خدمات الاستشارات القانونية , خدمات الشركات, خدمات العقود و الاتفاقيات, Consulting and studies services , Corporate services , Contracts and Agreements Services"
                 description="A specialized page displaying all the services that can be provided by the company"
                 type="website"
             />
